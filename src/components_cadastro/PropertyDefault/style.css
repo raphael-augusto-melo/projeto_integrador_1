@@ -1,0 +1,19 @@
+.property-default {
+  background-color: #ffffff;
+  height: 15px;
+  position: relative;
+  width: 13px;
+}
+
+.property-default .value-field {
+  color: #000000;
+  font-family: "Montserrat", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  left: 6px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: -5px;
+}

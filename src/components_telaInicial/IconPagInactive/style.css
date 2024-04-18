@@ -1,0 +1,33 @@
+.icon-pag-inactive {
+  align-items: center;
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.icon-pag-inactive .rectangle {
+  background-color: #f5061d;
+  border-radius: 10px;
+  height: 110px;
+  position: relative;
+  width: 119px;
+}
+
+.icon-pag-inactive .text-wrapper-2 {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  width: fit-content;
+}
+
+.icon-pag-inactive .barcode {
+  height: 59px;
+  left: -3802px;
+  position: absolute;
+  top: -1293px;
+  width: 59px;
+}

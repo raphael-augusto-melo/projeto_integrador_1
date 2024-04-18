@@ -1,0 +1,28 @@
+.cria-inactive {
+  height: 58px;
+  width: 230px;
+}
+
+.cria-inactive .frame {
+  align-items: center;
+  background-color: #f5061d;
+  border-radius: 45px;
+  display: inline-flex;
+  gap: 10px;
+  height: 58px;
+  justify-content: center;
+  padding: 2px 36px;
+  position: relative;
+}
+
+.cria-inactive .text-wrapper {
+  color: #ffffff;
+  font-family: "Exo 2", Helvetica;
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}

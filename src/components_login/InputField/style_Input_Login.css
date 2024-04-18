@@ -1,0 +1,42 @@
+.input-field {
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid #d4d7de;
+  border-radius: 3px;
+  height: 44px;
+  width: 327px;
+  display: flex;
+  align-items: center; /* Centraliza verticalmente */
+  padding: 0 10px; /* Adiciona espaçamento interno nos lados */
+}
+
+.input-field .overlap-group {
+  height: 15px;
+  position: relative;
+}
+
+.input-field.active-state .key-field {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+}
+
+.key-field {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  transform: translateY(50%)
+}
+
+.default-text {
+  top: 30%;
+  position: absolute;
+  pointer-events: none;
+  font-family: "Exo 2", Helvetica;
+}

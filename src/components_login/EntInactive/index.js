@@ -1,0 +1,1 @@
+export { EntInactive } from "./EntInactive";

@@ -1,0 +1,257 @@
+.login {
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.login .div {
+  background: linear-gradient(180deg, rgb(255, 214.62, 214.62) 0%, rgb(245.44, 10.23, 10.23) 100%);
+  background-color: rgba(255, 255, 255, 1);
+  height: 1024px;
+  position: relative;
+  width: 1280px;
+}
+
+.login .overlap {
+  height: 746px;
+  left: 0;
+  position: absolute;
+  top: 26px;
+  width: 481px;
+}
+
+.login .ceubank {
+  height: 97px;
+  left: 151px;
+  object-fit: cover;
+  position: absolute;
+  top: 64px;
+  width: 281px;
+}
+
+.login .text-wrapper-2 {
+  color: #000000;
+  font-family: "Outfit", Helvetica;
+  font-size: 50px;
+  font-weight: 700;
+  left: 41px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+}
+
+.login .text-wrapper-3 {
+  color: #000000;
+  font-family: "Outfit", Helvetica;
+  font-size: 34px;
+  font-weight: 600;
+  left: 192px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 42px;
+}
+
+.login .heart-red-gradient {
+  height: 74px;
+  left: 379px;
+  position: absolute;
+  top: 2px;
+  width: 102px;
+}
+
+.login .bent-shape-and-two {
+  height: 427px;
+  left: 0;
+  position: absolute;
+  top: 319px;
+  width: 301px;
+}
+
+.login .dynamic-composition {
+  height: 288px;
+  left: 124px;
+  position: absolute;
+  top: 347px;
+  width: 255px;
+}
+
+.login .transparent-lenses {
+  height: 256px;
+  left: 14px;
+  position: absolute;
+  top: 76px;
+  width: 220px;
+}
+
+.login .overlap-group-2 {
+  height: 1024px;
+  left: 495px;
+  position: absolute;
+  top: 0;
+  width: 785px;
+}
+
+.login .rectangle {
+  background-color: #ffffff;
+  height: 1024px;
+  left: 268px;
+  position: absolute;
+  top: 0;
+  width: 517px;
+}
+
+.login .input-field-instance {
+  border-color: #ac0000 !important;
+  border-radius: 20px !important;
+  height: 37px !important;
+  left: 399px !important;
+  position: absolute !important;
+  top: 260px !important;
+  width: 282px !important;
+}
+
+.login .design-component-instance-node {
+  font-family: "Exo 2", Helvetica !important;
+  font-size: 12px !important;
+  top: 10px !important;
+}
+
+.login .input-field-2 {
+  border-color: #ac0000 !important;
+  border-radius: 20px !important;
+  height: 37px !important;
+  left: 399px !important;
+  position: absolute !important;
+  top: 324px !important;
+  width: 282px !important;
+}
+
+.login .p {
+  color: #000000;
+  font-family: "Outfit", Helvetica;
+  font-size: 10px;
+  font-weight: 400;
+  left: 402px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 360px;
+}
+
+.login .text-wrapper-4 {
+  color: #000000;
+  font-family: "Outfit", Helvetica;
+  font-size: 17px;
+  font-weight: 400;
+  left: 402px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 302px;
+}
+
+.login .text-wrapper-5 {
+  color: #000000;
+  font-family: "Outfit", Helvetica;
+  font-size: 17px;
+  font-weight: 400;
+  left: 402px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 238px;
+}
+
+.login .text-wrapper-6 {
+  color: #000000;
+  font-family: "Outfit", Helvetica;
+  font-size: 30px;
+  font-weight: 400;
+  left: 415px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 186px;
+}
+
+.login .text-wrapper-7 {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 17px;
+  font-weight: 700;
+  left: 365px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 686px;
+  white-space: nowrap;
+}
+
+.login .levitating-gradient {
+  height: 259px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 290px;
+}
+
+.login .text-wrapper-8 {
+  color: #f5061d;
+  font-family: "Exo 2", Helvetica;
+  font-size: 17px;
+  font-weight: 400;
+  left: 588px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 654px;
+  width: 132px;
+}
+
+.login .button-cad {
+  height: 43px !important;
+  left: 562px !important;
+  position: absolute !important;
+  top: 676px !important;
+  width: 173px !important;
+}
+
+.login .cad-inactive-instance {
+  color: #000000 !important;
+  font-size: 17px !important;
+  font-weight: 700 !important;
+}
+
+.login .button-cad-2 {
+  height: 43px !important;
+  width: unset !important;
+}
+
+.login .button-cad-3 {
+  background-color: #ffffff !important;
+  height: 43px !important;
+  left: 2px !important;
+}
+
+.login .button-ent {
+  height: 34px !important;
+  left: 471px !important;
+  position: absolute !important;
+  top: 401px !important;
+  width: 138px !important;
+}
+
+.login .ent-inactive-instance {
+  height: 34px !important;
+  left: -2px !important;
+}
+
+.login .button-ent-2 {
+  font-size: 24px !important;
+  margin-top: -0.5px !important;
+  white-space: unset !important;
+}

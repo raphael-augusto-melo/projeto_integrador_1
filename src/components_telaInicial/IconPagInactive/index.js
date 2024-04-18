@@ -1,0 +1,1 @@
+export { IconPagInactive } from "./IconPagInactive";
