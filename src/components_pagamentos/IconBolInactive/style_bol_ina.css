@@ -1,0 +1,34 @@
+.icon-bol-inactive {
+  align-items: center;
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.icon-bol-inactive .rectangle {
+  background-color: #f5061d;
+  border-radius: 10px;
+  height: 148px;
+  position: relative;
+  width: 161px;
+}
+
+.icon-bol-inactive .div {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.icon-bol-inactive .barcode {
+  height: 96px;
+  left: 32px;
+  position: absolute;
+  top: 26px;
+  width: 96px;
+}

@@ -46,33 +46,39 @@ export const TelaInicial = () => {
           <img className="wallet" alt="Wallet" src="https://c.animaapp.com/dLRYJhiQ/img/wallet@2x.png" />
           <img className="debit-card" alt="Debit card" src="https://c.animaapp.com/dLRYJhiQ/img/debit-card@2x.png" />
           <div className="text-wrapper-8">Acesso Rápido</div>
-          <img className="forward" alt="Forward" src="https://c.animaapp.com/dLRYJhiQ/img/forward@2x.png" />
-          <img className="back" alt="Back" src="https://c.animaapp.com/dLRYJhiQ/img/back@2x.png" />
+          <a href="/TelaExtrato"> {/* Botao ver extrato */}
           <ExtInactive className="button-ext" />
-          <div className="button-icon-pix">
+          </a>
+          <a className="button-icon-pix" href="/TelaPix"> {/* botao pix */}
             <div className="img-wrapper">
               <img className="image-2" alt="Image" src="https://c.animaapp.com/dLRYJhiQ/img/image-9-1@2x.png" />
             </div>
             <div className="text-wrapper-9">Pix</div>
-          </div>
-          <div className="button-icon-ext">
+          </a>
+          <a className="button-icon-ext" href="/TelaExtrato"> {/* botao extrato */}
             <div className="img-wrapper">
               <img className="list-view" alt="List view" src="https://c.animaapp.com/dLRYJhiQ/img/list-view-1@2x.png" />
             </div>
             <div className="text-wrapper-10">Extratos</div>
-          </div>
+          </a>
+          <a href="/TelaFatura"> {/* botao ver fatura */}
           <VerFatInactive className="button-ver-fat" />
+          </a>
+          <a href="/TelaPagamentos"> {/* botao pagamento */}
           <IconPagInactive
             barcode="https://c.animaapp.com/dLRYJhiQ/img/barcode-1@2x.png"
             barcodeClassName="icon-pag-inactive-instance"
             className="button-icon-pag"
           />
+          </a> 
+          <a href="/"> {/* botao poupanca */}
           <Frame
             className="frame-25"
             image="https://c.animaapp.com/dLRYJhiQ/img/image-11-2@2x.png"
             imageClassName="frame-instance"
           />
-          <div className="group">
+          </a>
+          <a className="group" href="/"> {/* botao empréstimo */}
             <div className="coin-in-hand-wrapper">
               <img
                 className="coin-in-hand"
@@ -81,8 +87,8 @@ export const TelaInicial = () => {
               />
             </div>
             <div className="text-wrapper-11">Empréstimo</div>
-          </div>
-          <div className="overlap-wrapper">
+          </a>
+          <a className="overlap-wrapper" href="/"> {/* botao transferencia */}
             <div className="overlap-3">
               <div className="group-wrapper">
                 <div className="group-2">
@@ -92,32 +98,14 @@ export const TelaInicial = () => {
               </div>
               <div className="group-3" />
             </div>
-          </div>
+          </a>
         </div>
         <div className="overlap-4">
           <div className="rectangle-4" />
-          <img className="male-user" alt="Male user" src="https://c.animaapp.com/dLRYJhiQ/img/male-user@2x.png" />
+          <a href="/"> {/* botao de perfil */}
+          <img className="male-user" alt="Male user" src="https://c.animaapp.com/dLRYJhiQ/img/male-user@2x.png" /> 
+          </a>
           <img className="ceubank" alt="Ceubank" src="https://c.animaapp.com/dLRYJhiQ/img/ceubank2-2@2x.png" />
-          <div className="frame-wrapper">
-            <div className="div-wrapper">
-              <div className="text-wrapper-13">Início</div>
-            </div>
-          </div>
-          <div className="group-4">
-            <div className="frame-2">
-              <div className="text-wrapper-14">Extrato</div>
-            </div>
-          </div>
-          <div className="group-5">
-            <div className="frame-3">
-              <div className="text-wrapper-15">Pagamentos</div>
-            </div>
-          </div>
-          <div className="group-6">
-            <div className="frame-4">
-              <div className="text-wrapper-16">Transferências</div>
-            </div>
-          </div>
         </div>
       </div>
     </div>

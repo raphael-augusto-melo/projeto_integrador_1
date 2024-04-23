@@ -1,0 +1,34 @@
+.property-default-wrapper {
+  height: 66px;
+  width: 96px;
+}
+
+.property-default-wrapper .frame {
+  height: 66px;
+  position: relative;
+}
+
+.property-default-wrapper .todos {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  left: 15px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 17px;
+}
+
+.property-default-wrapper:hover .frame {
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  border-color: #f5061d;
+}
+
+.property-default-wrapper:hover .todos {
+  -webkit-text-stroke: 1px #00000080;
+  color: #f5061d;
+  left: 14px;
+  top: 12px;
+}

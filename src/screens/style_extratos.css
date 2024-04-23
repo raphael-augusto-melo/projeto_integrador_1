@@ -1,0 +1,466 @@
+.tela-extrato {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.tela-extrato .div {
+  background-color: #ffffff;
+  height: 1024px;
+  overflow: hidden;
+  position: relative;
+  width: 1280px;
+}
+
+.tela-extrato .overlap {
+  background-color: #f5061d;
+  border-radius: 0px 0px 20px 20px;
+  height: 80px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1281px;
+}
+
+.tela-extrato .text-wrapper {
+  color: #ffffff;
+  font-family: "Exo 2", Helvetica;
+  font-size: 40px;
+  font-weight: 400;
+  left: 566px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 15px;
+  white-space: nowrap;
+  width: 167px;
+}
+
+.tela-extrato .group-29 {
+  left: 22px !important;
+  position: absolute !important;
+  top: 11px !important;
+}
+
+.tela-extrato .overlap-2 {
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #7f7676;
+  height: 101px;
+  left: 267px;
+  position: absolute;
+  top: 171px;
+  width: 745px;
+}
+
+.tela-extrato .ag-CC {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  left: 36px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 20px;
+}
+
+.tela-extrato .line {
+  height: 73px;
+  left: 239px;
+  object-fit: cover;
+  position: absolute;
+  top: 15px;
+  width: 1px;
+}
+
+.tela-extrato .text-wrapper-2 {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  left: 407px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 13px;
+}
+
+.tela-extrato .r {
+  color: transparent;
+  font-family: "Exo 2", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  left: 470px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 48px;
+  width: 139px;
+}
+
+.tela-extrato .span {
+  color: #f5061d;
+}
+
+.tela-extrato .text-wrapper-3 {
+  color: #040404;
+}
+
+.tela-extrato .overlap-3 {
+  height: 63px;
+  left: 102px;
+  position: absolute;
+  top: 377px;
+  width: 975px;
+}
+
+.tela-extrato .overlap-4 {
+  height: 63px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 975px;
+}
+
+.tela-extrato .img {
+  height: 1px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 2px;
+  width: 975px;
+}
+
+.tela-extrato .print {
+  height: 63px;
+  left: 923px;
+  position: absolute;
+  top: 0;
+  width: 51px;
+}
+
+.tela-extrato .group-19 {
+  height: 63px !important;
+  left: 82px !important;
+  position: absolute !important;
+  top: 0 !important;
+}
+
+.tela-extrato .group-instance {
+  height: 63px !important;
+}
+
+.tela-extrato .group-19-instance {
+  height: 63px !important;
+  left: 300px !important;
+  position: absolute !important;
+  top: 0 !important;
+  width: 121px !important;
+}
+
+.tela-extrato .design-component-instance-node {
+  height: 63px !important;
+  left: 178px !important;
+  position: absolute !important;
+  top: 0 !important;
+  width: 122px !important;
+}
+
+.tela-extrato .PDF {
+  height: 53px;
+  left: 860px;
+  position: absolute;
+  top: 5px;
+  width: 52px;
+}
+
+.tela-extrato .overlap-5 {
+  height: 581px;
+  left: 99px;
+  position: absolute;
+  top: 443px;
+  width: 1073px;
+}
+
+.tela-extrato .line-2 {
+  height: 1px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 1073px;
+}
+
+.tela-extrato .frame-2 {
+  height: 581px;
+  left: 3px;
+  position: absolute;
+  top: 0;
+  width: 1070px;
+}
+
+.tela-extrato .group-wrapper {
+  background-color: #8300004c;
+  height: 54px;
+  left: 0;
+  position: absolute;
+  top: 15px;
+  width: 1070px;
+}
+
+.tela-extrato .group-2 {
+  height: 37px;
+  left: 34px;
+  position: relative;
+  top: 8px;
+  width: 152px;
+}
+
+.tela-extrato .text-wrapper-4 {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 56px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 7px;
+  white-space: nowrap;
+}
+
+.tela-extrato .calendar {
+  height: 37px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 44px;
+}
+
+.tela-extrato .p {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  left: 56px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 90px;
+}
+
+.tela-extrato .text-wrapper-5 {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  left: 599px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 90px;
+}
+
+.tela-extrato .text-wrapper-6 {
+  color: #a70000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  left: 873px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 90px;
+}
+
+.tela-extrato .line-3 {
+  height: 1px;
+  left: 56px;
+  object-fit: cover;
+  position: absolute;
+  top: 141px;
+  width: 1014px;
+}
+
+.tela-extrato .text-wrapper-7 {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  left: 56px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 163px;
+}
+
+.tela-extrato .text-wrapper-8 {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  left: 599px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 163px;
+}
+
+.tela-extrato .text-wrapper-9 {
+  color: #a70000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  left: 873px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 163px;
+}
+
+.tela-extrato .line-4 {
+  height: 1px;
+  left: 56px;
+  object-fit: cover;
+  position: absolute;
+  top: 214px;
+  width: 1014px;
+}
+
+.tela-extrato .text-wrapper-10 {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  left: 56px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 236px;
+}
+
+.tela-extrato .text-wrapper-11 {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  left: 599px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 236px;
+}
+
+.tela-extrato .text-wrapper-12 {
+  color: #438303;
+  font-family: "Exo 2", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  left: 883px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 236px;
+}
+
+.tela-extrato .div-wrapper {
+  background-color: #8300004c;
+  height: 54px;
+  left: 0;
+  position: absolute;
+  top: 310px;
+  width: 1070px;
+}
+
+.tela-extrato .group-3 {
+  height: 37px;
+  left: 34px;
+  position: relative;
+  top: 8px;
+  width: 166px;
+}
+
+.tela-extrato .text-wrapper-13 {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  left: 56px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 385px;
+}
+
+.tela-extrato .text-wrapper-14 {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  left: 595px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 385px;
+}
+
+.tela-extrato .text-wrapper-15 {
+  color: #a70000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  left: 887px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 385px;
+}
+
+.tela-extrato .line-5 {
+  height: 1px;
+  left: 56px;
+  object-fit: cover;
+  position: absolute;
+  top: 436px;
+  width: 1014px;
+}
+
+.tela-extrato .frame-3 {
+  background-color: #8300004c;
+  height: 54px;
+  left: 0;
+  position: absolute;
+  top: 481px;
+  width: 1070px;
+}
+
+.tela-extrato .group-4 {
+  height: 37px;
+  left: 34px;
+  position: relative;
+  top: 8px;
+  width: 170px;
+}
+
+.tela-extrato .text-wrapper-16 {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  left: 132px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 334px;
+}
+
+.tela-extrato .expand-arrow {
+  height: 27px;
+  left: 1048px;
+  position: absolute;
+  top: 337px;
+  width: 22px;
+}

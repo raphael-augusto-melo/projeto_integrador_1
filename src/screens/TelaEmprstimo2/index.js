@@ -1,0 +1,1 @@
+export { TelaEmprstimo } from "./TelaEmprstimo";

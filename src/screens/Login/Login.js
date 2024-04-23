@@ -1,7 +1,7 @@
 import React from "react";
-import { CadInactive } from "../../components_login/CadInactive";
-import { EntInactive } from "../../components_login/EntInactive";
-import { InputField, SenhaInputField } from "../../components_login/InputField/index";
+import { CadInactive } from "../../components_login/CadInactive_login";
+import { EntInactive } from "../../components_login/EntInactive_login";
+import { InputFieldLogin, SenhaInputField } from "../../components_login/InputField_login/index_input_login";
 import "../style_login.css";
 
 export const Login = () => {
@@ -35,7 +35,7 @@ export const Login = () => {
         </div>
         <div className="overlap-group-2">
           <div className="rectangle" />
-          <InputField
+          <InputFieldLogin
             className="input-field-instance"
             keyFieldClassName="design-component-instance-node"
             property1="default-state"

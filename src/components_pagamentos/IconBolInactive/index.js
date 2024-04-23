@@ -1,0 +1,1 @@
+export { IconBolInactive } from "./IconBolInactive";

@@ -1,0 +1,195 @@
+.input-field {
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #d4d7de;
+  border-radius: 4px;
+  height: 44px;
+  width: 327px;
+}
+
+.input-field .overlap-group {
+  height: 15px;
+  position: relative;
+}
+
+.input-field_pix .element {
+  left: 288px !important;
+  position: absolute !important;
+  top: 0 !important;
+}
+
+.input-field .property-1-default {
+  left: 276px !important;
+  position: absolute !important;
+  top: 0 !important;
+}
+
+.input-field .property-default-instance {
+  left: 264px !important;
+  position: absolute !important;
+  top: 0 !important;
+}
+
+.input-field .property-1-default-instance {
+  left: 253px !important;
+  position: absolute !important;
+  top: 0 !important;
+}
+
+.input-field .instance-node {
+  left: 242px !important;
+  position: absolute !important;
+  top: 0 !important;
+}
+
+.input-field .element-2 {
+  left: 230px !important;
+  position: absolute !important;
+  top: 0 !important;
+}
+
+.input-field .element-3 {
+  left: 218px !important;
+  position: absolute !important;
+  top: 0 !important;
+}
+
+.input-field .element-4 {
+  left: 207px !important;
+  position: absolute !important;
+  top: 0 !important;
+}
+
+.input-field .element-5 {
+  left: 196px !important;
+  position: absolute !important;
+  top: 0 !important;
+}
+
+.input-field .element-6 {
+  left: 184px !important;
+  position: absolute !important;
+  top: 0 !important;
+}
+
+.input-field .element-7 {
+  left: 172px !important;
+  position: absolute !important;
+  top: 0 !important;
+}
+
+.input-field .element-8 {
+  left: 161px !important;
+  position: absolute !important;
+  top: 0 !important;
+}
+
+.input-field .element-9 {
+  left: 150px !important;
+  position: absolute !important;
+  top: 0 !important;
+}
+
+.input-field .element-10 {
+  left: 138px !important;
+  position: absolute !important;
+  top: 0 !important;
+}
+
+.input-field .element-11 {
+  left: 126px !important;
+  position: absolute !important;
+  top: 0 !important;
+}
+
+.input-field .element-12 {
+  left: 115px !important;
+  position: absolute !important;
+  top: 0 !important;
+}
+
+.input-field .element-13 {
+  left: 104px !important;
+  position: absolute !important;
+  top: 0 !important;
+}
+
+.input-field .element-14 {
+  left: 92px !important;
+  position: absolute !important;
+  top: 0 !important;
+}
+
+.input-field .element-15 {
+  left: 80px !important;
+  position: absolute !important;
+  top: 0 !important;
+}
+
+.input-field .element-16 {
+  left: 69px !important;
+  position: absolute !important;
+  top: 0 !important;
+}
+
+.input-field .element-17 {
+  left: 58px !important;
+  position: absolute !important;
+  top: 0 !important;
+}
+
+.input-field .element-18 {
+  left: 46px !important;
+  position: absolute !important;
+  top: 0 !important;
+}
+
+.input-field .element-19 {
+  left: 34px !important;
+  position: absolute !important;
+  top: 0 !important;
+}
+
+.input-field .element-20 {
+  left: 23px !important;
+  position: absolute !important;
+  top: 0 !important;
+}
+
+.input-field .element-21 {
+  left: 12px !important;
+  position: absolute !important;
+  top: 0 !important;
+}
+
+.input-field .element-22 {
+  left: 0 !important;
+  position: absolute !important;
+  top: 0 !important;
+}
+
+.input-field.default-state {
+  position: relative;
+}
+
+.input-field.active-state .key-field {
+  height: 15px;
+  left: 14px;
+  position: relative;
+  top: 16px;
+  width: 300px;
+}
+
+.input-field.default-state_pix .key-field {
+  color: #323940;
+  font-family: "PT Mono", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  left: 15px;
+  letter-spacing: 0;
+  line-height: normal;
+  opacity: 0.8;
+  position: absolute;
+  top: 12px;
+  white-space: nowrap;
+}

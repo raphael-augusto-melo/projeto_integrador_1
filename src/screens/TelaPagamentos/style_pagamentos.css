@@ -1,0 +1,101 @@
+.tela-pagamentos {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.tela-pagamentos .div-2 {
+  background-color: #ffffff;
+  height: 1024px;
+  position: relative;
+  width: 1280px;
+}
+
+.tela-pagamentos .overlap {
+  background-color: #f5061d; 
+  border-radius: 0px 0px 20px 20px;
+  height: 80px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1280px;
+}
+
+.tela-pagamentos .text-wrapper-2 {
+  color: #ffffff;
+  font-family: "Exo 2", Helvetica;
+  font-size: 40px;
+  font-weight: 400;
+  left: 522px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 16px;
+  white-space: nowrap;
+  width: 236px;
+}
+
+.tela-pagamentos .group-29 {
+  left: 22px !important;
+  position: absolute !important;
+  top: 10px !important;
+}
+
+.tela-pagamentos .p {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 40px;
+  font-weight: 400;
+  left: 179px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 163px;
+  white-space: nowrap;
+}
+
+.tela-pagamentos .overlap-2 {
+  background-color: #f7f7f7;
+  border: 1px solid;
+  border-color: #676363;
+  height: 295px;
+  left: 342px;
+  position: absolute;
+  top: 310px;
+  width: 631px;
+}
+
+.tela-pagamentos .button-icon-pix {
+  height: 198px !important;
+  left: 72px !important;
+  position: absolute !important;
+  top: 59px !important;
+  width: 159px !important;
+}
+
+.tela-pagamentos .pix-icon-inactive-instance {
+  height: 147px !important;
+  width: 159px !important;
+}
+
+.tela-pagamentos .design-component-instance-node {
+  height: 80px !important;
+  left: 39px !important;
+  top: 37px !important;
+  width: 79px !important;
+}
+
+.tela-pagamentos .button-icon-pix-2 {
+  font-size: 32px !important;
+  left: 56px !important;
+  top: 158px !important;
+  white-space: nowrap !important;
+}
+
+.tela-pagamentos .button-icon-bol {
+  left: 379px !important;
+  position: absolute !important;
+  top: 59px !important;
+}

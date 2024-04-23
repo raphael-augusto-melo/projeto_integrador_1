@@ -1,0 +1,1 @@
+export { TelaPix } from "./TelaPix";

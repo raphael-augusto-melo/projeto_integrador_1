@@ -1,0 +1,1 @@
+export { TelaFatura } from "./TelaFatura";

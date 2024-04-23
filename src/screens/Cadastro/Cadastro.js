@@ -1,6 +1,6 @@
 import React from "react";
-import { CriaInactive } from "../../components_cadastro/CriaInactive";
-import { InputFieldName, InputFieldCPF, InputFieldERM, InputFieldEmail, InputFieldEndereco, InputFieldRG, InputFieldTelefone } from "../../components_cadastro/InputField";
+import { CriaInactive } from "../../components_cadastro/CriaInactive_cadastro";
+import { InputFieldName, InputFieldCPF, InputFieldERM, InputFieldEmail, InputFieldEndereco, InputFieldRG, InputFieldTelefone } from "../../components_cadastro/InputField_cadastro";
 import "../style_cadastro.css";
 
 export const Cadastro = () => {

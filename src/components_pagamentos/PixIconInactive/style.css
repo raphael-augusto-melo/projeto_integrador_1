@@ -1,0 +1,36 @@
+.pix-icon-inactive {
+  height: 148px;
+  position: relative;
+  width: 119px;
+}
+
+.pix-icon-inactive .image-wrapper {
+  background-color: #f5061d;
+  border-radius: 10px;
+  height: 110px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 119px;
+}
+
+.pix-icon-inactive .image {
+  height: 62px;
+  left: 28px;
+  object-fit: cover;
+  position: absolute;
+  top: 28px;
+  width: 61px;
+}
+
+.pix-icon-inactive .text-wrapper {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  left: 42px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 118px;
+}

@@ -1,0 +1,38 @@
+.property-default-wrapper {
+  display: block;
+  height: 66px;
+  width: 96px;
+}
+
+.property-default-wrapper .frame {
+  height: 66px;
+  position: relative;
+}
+
+.property-default-wrapper .todos {
+  font-family: "Exo 2", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+}
+
+.property-default-wrapper .property-1-variant-2 {
+  border-bottom-style: solid;
+  border-bottom-width: 5px;
+  border-color: #f5061d;
+}
+
+.property-default-wrapper .frame.property-1-default .todos {
+  color: #000000;
+  left: 15px;
+  top: 17px;
+}
+
+.property-default-wrapper .frame.property-1-variant-2 .todos {
+  -webkit-text-stroke: 1px #00000080;
+  color: #f5061d;
+  left: 14px;
+  top: 12px;
+}
