@@ -21,7 +21,7 @@ export const InputFieldCPFEsq = ({ property1 = "default-state", className, keyFi
   };
 
   return (
-    <div className={`input-field ${state.property1} ${className}`}>
+    <div className={`input-field_EsqSenha ${state.property1} ${className}`}>
       <input
         type="text"
         maxLength={maxLength}

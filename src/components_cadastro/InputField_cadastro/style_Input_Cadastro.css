@@ -1,4 +1,4 @@
-.input-field {
+.input-field_cad {
   position: relative;
   display: inline-block;
   width: 327px;
@@ -7,14 +7,15 @@
   margin-bottom: 15px;
 }
 
-.input-field .element {
+.input-field_cad .element {
+  border-color: #ac0000;
   position: absolute;
   left: 0;
-  width: calc(100% - 20px); /* Ajuste conforme necessário */
+  width: 100%; /* Ajuste conforme necessário */
   height: 100%;
-  border: none;
   outline: none;
   font-size: 16px;
   line-height: 44px;
   padding-left: 17px;
+  border-radius: 10px;
 }

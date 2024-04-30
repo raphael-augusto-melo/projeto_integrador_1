@@ -89,7 +89,6 @@
   
   .cadastro .input-field-instance {
     border-color: #ac0000 !important;
-    border-radius: 20px !important;
     height: 57px !important;
     left: 0 !important;
     position: absolute !important;
@@ -185,8 +184,6 @@
     font-size: 25px !important;
   }
   .cadastro .input-field-Senha{
-    border-color: #ac0000 !important;
-    border-radius: 20px !important;
     height: 57px !important;
     position: absolute !important;
     top: 261px !important;
@@ -195,8 +192,6 @@
   }
   
   .cadastro .input-field-2 {
-    border-color: #ac0000 !important;
-    border-radius: 20px !important;
     height: 57px !important;
     left: 30px !important;
     position: absolute !important;
@@ -205,8 +200,6 @@
   }
   
   .cadastro .input-field-3 {
-    border-color: #ac0000 !important;
-    border-radius: 20px !important;
     height: 57px !important;
     left: 639px !important;
     position: absolute !important;
@@ -215,8 +208,6 @@
   }
   
   .cadastro .input-field-4 {
-    border-color: #ac0000 !important;
-    border-radius: 20px !important;
     height: 57px !important;
     left: 639px !important;
     position: absolute !important;
@@ -225,8 +216,6 @@
   }
   
   .cadastro .input-field-5 {
-    border-color: #ac0000 !important;
-    border-radius: 20px !important;
     height: 57px !important;
     left: 30px !important;
     position: absolute !important;
@@ -235,8 +224,6 @@
   }
   
   .cadastro .input-field-6 {
-    border-color: #ac0000 !important;
-    border-radius: 20px !important;
     height: 57px !important;
     left: 30px !important;
     position: absolute !important;
@@ -245,8 +232,6 @@
   }
   
   .cadastro .input-field-7 {
-    border-color: #ac0000 !important;
-    border-radius: 20px !important;
     height: 57px !important;
     left: 30px !important;
     position: absolute !important;

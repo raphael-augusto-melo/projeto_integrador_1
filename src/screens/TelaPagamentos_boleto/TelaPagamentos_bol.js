@@ -1,6 +1,7 @@
 import React from "react";
 import { ExtInactive } from "../../components_pag_bol/ExtInactive";
 import { Group } from "../../components_pag_bol/Group";
+import { InputFieldCodBol } from "../../components_pag_bol/InputField";
 import "./style_pagamentos_bol.css";
 
 export const TelaPagamentos_bol = () => {
@@ -8,9 +9,10 @@ export const TelaPagamentos_bol = () => {
     <div className="tela-pagamentos_bol">
       <div className="div">
         <div className="overlap">
-          <div className="div-wrapper">
-            <p className="text-wrapper">Digite o código do boleto aqui...</p>
-          </div>
+        <InputFieldCodBol
+          className="div-wrapper"
+          maxLength={43}
+          text={"Digite o código do boleto aqui..."} />
           <img
             className="barcode-approve"
             alt="Barcode approve"

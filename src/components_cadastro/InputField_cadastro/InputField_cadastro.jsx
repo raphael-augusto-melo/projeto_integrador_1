@@ -30,7 +30,7 @@ export const InputFieldName = ({ property1 = "default-state", className, keyFiel
   };
 
   return (
-    <div className={`input-field ${state.property1} ${className}`}>
+    <div className={`input-field_cad ${state.property1} ${className}`}>
       <input
         type="text"
         value={state.value}
@@ -62,7 +62,7 @@ export const InputFieldCPF = ({ property1 = "default-state", className, keyField
   };
 
   return (
-    <div className={`input-field ${state.property1} ${className}`}>
+    <div className={`input-field_cad ${state.property1} ${className}`}>
       <input
         type="text"
         maxLength={maxLength}
@@ -94,7 +94,7 @@ export const InputFieldEmail = ({ property1 = "default-state", className, keyFie
   };
 
   return (
-    <div className={`input-field ${state.property1} ${className}`}>
+    <div className={`input-field_cad ${state.property1} ${className}`}>
       <input
         type="text"
         value={state.value}
@@ -126,7 +126,7 @@ export const InputFieldRG = ({ property1 = "default-state", className, keyFieldC
   };
 
   return (
-    <div className={`input-field ${state.property1} ${className}`}>
+    <div className={`input-field_cad ${state.property1} ${className}`}>
       <input
         type="text"
         maxLength={maxLength}
@@ -158,7 +158,7 @@ export const InputFieldEndereco = ({ property1 = "default-state", className, key
   };
 
   return (
-    <div className={`input-field ${state.property1} ${className}`}>
+    <div className={`input-field_cad ${state.property1} ${className}`}>
       <input
         type="text"
         value={state.value}
@@ -191,7 +191,7 @@ export const InputFieldTelefone = ({ property1 = "default-state", className, key
   };
 
   return (
-    <div className={`input-field ${state.property1} ${className}`}>
+    <div className={`input-field_cad ${state.property1} ${className}`}>
       <input
         type="text"
         maxLength={maxLength}
@@ -223,7 +223,7 @@ export const InputFieldERM = ({ property1 = "default-state", className, keyField
   };
 
   return (
-    <div className={`input-field ${state.property1} ${className}`}>
+    <div className={`input-field_cad ${state.property1} ${className}`}>
       <input
         type="text"
         value={state.value}
@@ -253,7 +253,7 @@ export const InputFieldSenha = ({ property1 = "default-state", className, keyFie
   };
 
   return (
-    <div className={`input-field ${state.property1} ${className}`}>
+    <div className={`input-field_cad ${state.property1} ${className}`}>
       <input
         type="password"
         maxLength={maxLength}

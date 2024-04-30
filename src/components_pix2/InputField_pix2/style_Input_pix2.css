@@ -1,4 +1,4 @@
-.input-field {
+.input-field_pix2 {
   position: relative;
   display: inline-block;
   width: 327px;
@@ -7,7 +7,7 @@
   margin-bottom: 15px;
 }
 
-.input-field .element {
+.input-field_pix2 .element {
   position: absolute;
   left: 0;
   width: calc(100% - 20px); /* Ajuste conforme necessário */

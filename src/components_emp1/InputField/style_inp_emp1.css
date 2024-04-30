@@ -19,6 +19,12 @@
   transform: translateY(0%);
   font-family: "Exo 2", Helvetica;
   padding: 10px;
+  border: none;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  background-color: transparent;
+  font-size: 20px
 }
 
 .input-field_emp1.default-state .key-field {
@@ -33,5 +39,10 @@
   position: absolute;
   top: 12px;
   white-space: nowrap;
+  border: none;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  background-color: transparent;
 }
 

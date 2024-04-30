@@ -32,7 +32,7 @@ export const InputFieldData = ({ property1 = "default-state", className, text, m
   };
 
   return (
-    <div className={`input-field ${state.property1} ${className}`}>
+    <div className={`input-field_pix2 ${state.property1} ${className}`}>
       <input
         type="text"
         maxLength={maxLength}
@@ -66,7 +66,7 @@ export const InputFieldValor = ({ property1 = "default-state", className, keyFie
   };
 
   return (
-    <div className={`input-field ${state.property1} ${className}`}>
+    <div className={`input-field_pix2 ${state.property1} ${className}`}>
       <input
         type="text"
         value={state.value}

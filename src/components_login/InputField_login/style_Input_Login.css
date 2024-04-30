@@ -1,4 +1,4 @@
-.input-field {
+.input-field_log {
   position: relative;
   background-color: #ffffff;
   border: 1px solid #d4d7de;
@@ -10,12 +10,12 @@
   padding: 0 10px; /* Adiciona espaçamento interno nos lados */
 }
 
-.input-field .overlap-group {
+.input-field_log .overlap-group {
   height: 15px;
   position: relative;
 }
 
-.input-field.active-state .key-field {
+.input-field_log.active-state .key-field_log {
   position: absolute;
   top: 50%;
   left: 0;
@@ -27,11 +27,13 @@
   padding-left: 10px;
 }
 
-.key-field {
+.key-field_log {
   border: none;
   outline: none;
   background-color: transparent;
-  transform: translateY(50%)
+  width: 100%;
+  height: 100%;
+      font-family: "Exo 2", Helvetica
 }
 
 .default-text {

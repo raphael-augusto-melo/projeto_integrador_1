@@ -19,7 +19,7 @@ export const InputField = ({ property1 = "default-state", className, keyFieldCla
   };
 
   return (
-    <div className={`input-field ${state.property1} ${className}`}>
+    <div className={`input-field_pix ${state.property1} ${className}`}>
       <input
         type="text"
         value={state.value}

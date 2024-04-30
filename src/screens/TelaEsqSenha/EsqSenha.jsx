@@ -33,10 +33,10 @@ export const TelaEsqSenha = () => {
           />
           <div className="text-wrapper-3">CPF</div>
         </div>
-        <div className="overlap-2">
+        <a href="/" className="overlap-2">
           <img className="ceubank" alt="Ceubank" src="https://c.animaapp.com/U9iR2F0f/img/ceubank2-1@2x.png" />
           <Group className="group-29" property1="default" />
-        </div>
+        </a>
       </div>
     </div>
   );

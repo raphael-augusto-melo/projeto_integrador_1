@@ -37,7 +37,7 @@ export const SenhaInputField = ({ className, text = "Senha", maxLength }) => {
   });
 
   return (
-    <div className={`input-field ${state.property1} ${className}`}>
+    <div className={`input-field_EsqSenha3 ${state.property1} ${className}`}>
       <input
         className="element"
         type="password"

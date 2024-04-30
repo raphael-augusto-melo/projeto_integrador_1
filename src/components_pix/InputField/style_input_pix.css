@@ -16,6 +16,12 @@
   left: 288px !important;
   position: absolute !important;
   top: 0 !important;
+  width: 100%;
+  height: 100%;
+  border: none;
+  transform: translateX(-50%);
+  background-color: transparent;
+  outline: none;
 }
 
 .input-field_pix .property-1-default {
@@ -38,132 +44,6 @@
 
 .input-field_pix .instance-node {
   left: 242px !important;
-  position: absolute !important;
-  top: 0 !important;
-}
-
-.input-field_pix .element-2 {
-  left: 230px !important;
-  position: absolute !important;
-  top: 0 !important;
-}
-
-.input-field_pix .element-3 {
-  left: 218px !important;
-  position: absolute !important;
-  top: 0 !important;
-}
-
-.input-field_pix .element-4 {
-  left: 207px !important;
-  position: absolute !important;
-  top: 0 !important;
-}
-
-.input-field_pix .element-5 {
-  left: 196px !important;
-  position: absolute !important;
-  top: 0 !important;
-}
-
-.input-field_pix .element-6 {
-  left: 184px !important;
-  position: absolute !important;
-  top: 0 !important;
-}
-
-.input-field_pix .element-7 {
-  left: 172px !important;
-  position: absolute !important;
-  top: 0 !important;
-}
-
-.input-field_pix .element-8 {
-  left: 161px !important;
-  position: absolute !important;
-  top: 0 !important;
-}
-
-.input-field_pix .element-9 {
-  left: 150px !important;
-  position: absolute !important;
-  top: 0 !important;
-}
-
-.input-field_pix .element-10 {
-  left: 138px !important;
-  position: absolute !important;
-  top: 0 !important;
-}
-
-.input-field_pix .element-11 {
-  left: 126px !important;
-  position: absolute !important;
-  top: 0 !important;
-}
-
-.input-field_pix .element-12 {
-  left: 115px !important;
-  position: absolute !important;
-  top: 0 !important;
-}
-
-.input-field_pix .element-13 {
-  left: 104px !important;
-  position: absolute !important;
-  top: 0 !important;
-}
-
-.input-field_pix .element-14 {
-  left: 92px !important;
-  position: absolute !important;
-  top: 0 !important;
-}
-
-.input-field_pix .element-15 {
-  left: 80px !important;
-  position: absolute !important;
-  top: 0 !important;
-}
-
-.input-field_pix .element-16 {
-  left: 69px !important;
-  position: absolute !important;
-  top: 0 !important;
-}
-
-.input-field_pix .element-17 {
-  left: 58px !important;
-  position: absolute !important;
-  top: 0 !important;
-}
-
-.input-field_pix .element-18 {
-  left: 46px !important;
-  position: absolute !important;
-  top: 0 !important;
-}
-
-.input-field_pix .element-19 {
-  left: 34px !important;
-  position: absolute !important;
-  top: 0 !important;
-}
-
-.input-field_pix .element-20 {
-  left: 23px !important;
-  position: absolute !important;
-  top: 0 !important;
-}
-
-.input-field_pix .element-21 {
-  left: 12px !important;
-  position: absolute !important;
-  top: 0 !important;
-}
-
-.input-field_pix .element-22 {
-  left: 0 !important;
   position: absolute !important;
   top: 0 !important;
 }

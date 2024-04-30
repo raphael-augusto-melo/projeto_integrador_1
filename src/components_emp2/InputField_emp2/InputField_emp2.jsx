@@ -33,7 +33,7 @@ export const InputFieldValor = ({ property1 = "default-state", className, keyFie
   };
 
   return (
-    <div className={`input-field ${state.property1} ${className}`}>
+    <div className={`input-field_emp2 ${state.property1} ${className}`}>
       <input
         type="text"
         value={state.value}
