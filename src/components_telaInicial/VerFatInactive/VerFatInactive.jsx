@@ -9,7 +9,7 @@ import "./style.css";
 export const VerFatInactive = ({ className }) => {
   return (
     <div className={`ver-fat-inactive ${className}`}>
-      <div className="div">Ver fatura</div>
+      <div className="text-wrapper-3">Ver fatura</div>
     </div>
   );
 };

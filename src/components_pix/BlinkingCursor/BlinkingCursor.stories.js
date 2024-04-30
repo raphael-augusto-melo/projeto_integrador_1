@@ -15,6 +15,6 @@ export const Default = {
   args: {
     property1: "cursor-ON",
     className: {},
-    propertyCursorOn: "https://c.animaapp.com/0843AwLU/img/blinking-cursor-25@2x.png",
+    propertyCursorOn: "https://c.animaapp.com/CVAXwU6b/img/blinking-cursor-25@2x.png",
   },
 };

@@ -1,4 +1,4 @@
-.tela-emprstimo {
+.tela-emprstimo_emp1 {
   background-color: #ffffff;
   display: flex;
   flex-direction: row;
@@ -6,7 +6,7 @@
   width: 100%;
 }
 
-.tela-emprstimo .div-2 {
+.tela-emprstimo_emp1 .div-2 {
   background-color: #ffffff;
   height: 1024px;
   overflow: hidden;
@@ -14,7 +14,7 @@
   width: 1280px;
 }
 
-.tela-emprstimo .overlap {
+.tela-emprstimo_emp1 .overlap {
   background-color: #f5061d;
   border-radius: 0px 0px 20px 20px;
   height: 80px;
@@ -24,7 +24,7 @@
   width: 1281px;
 }
 
-.tela-emprstimo .text-wrapper {
+.tela-emprstimo_emp1 .text-wrapper {
   color: #ffffff;
   font-family: "Exo 2", Helvetica;
   font-size: 40px;
@@ -38,13 +38,13 @@
   width: 248px;
 }
 
-.tela-emprstimo .group-29 {
+.tela-emprstimo_emp1 .group-29 {
   left: 17px !important;
   position: absolute !important;
   top: 12px !important;
 }
 
-.tela-emprstimo .p {
+.tela-emprstimo_emp1 .p {
   color: #000000;
   font-family: "Exo 2", Helvetica;
   font-size: 40px;
@@ -57,7 +57,7 @@
   width: 968px;
 }
 
-.tela-emprstimo .rectangle {
+.tela-emprstimo_emp1 .rectangle {
   background-color: #b30808;
   height: 5px;
   left: 246px;
@@ -66,7 +66,7 @@
   width: 250px;
 }
 
-.tela-emprstimo .rectangle-2 {
+.tela-emprstimo_emp1 .rectangle-2 {
   background-color: #b9b6b6;
   height: 5px;
   left: 508px;
@@ -75,7 +75,7 @@
   width: 250px;
 }
 
-.tela-emprstimo .rectangle-3 {
+.tela-emprstimo_emp1 .rectangle-3 {
   background-color: #b9b6b6;
   height: 5px;
   left: 770px;
@@ -84,7 +84,7 @@
   width: 250px;
 }
 
-.tela-emprstimo .text-wrapper-2 {
+.tela-emprstimo_emp1 .text-wrapper-2 {
   color: #000000;
   font-family: "Exo 2", Helvetica;
   font-size: 24px;
@@ -96,7 +96,7 @@
   top: 254px;
 }
 
-.tela-emprstimo .overlap-2 {
+.tela-emprstimo_emp1 .overlap-2 {
   height: 372px;
   left: 377px;
   position: absolute;
@@ -104,7 +104,7 @@
   width: 531px;
 }
 
-.tela-emprstimo .overlap-group-wrapper {
+.tela-emprstimo_emp1 .overlap-group-wrapper {
   height: 372px;
   left: 0;
   position: absolute;
@@ -112,122 +112,55 @@
   width: 531px;
 }
 
-.tela-emprstimo .overlap-group-2 {
-  background: linear-gradient(180deg, rgb(244.37, 196.52, 196.52) 0%, rgb(232.69, 92.11, 92.11) 100%);
+.tela-emprstimo_emp1 .overlap-group-2 {
+  background-color: #F7F7F7;
   border: 1px solid;
   border-color: #676363;
   border-radius: 10px;
-  height: 372px;
+  height: 200px;
   position: relative;
   width: 525px;
 }
 
-.tela-emprstimo .rectangle-4 {
-  background-color: #ffffff;
-  border: 1px solid;
-  border-color: #000000;
-  border-radius: 10px;
-  height: 51px;
+.tela-emprstimo_emp1 .text-wrapper-5 {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
   left: 20px;
-  position: absolute;
-  top: 168px;
-  width: 484px;
-}
-
-.tela-emprstimo .rectangle-5 {
-  background-color: #ffffff;
-  border: 1px solid;
-  border-color: #000000;
-  border-radius: 10px;
-  height: 51px;
-  left: 20px;
-  position: absolute;
-  top: 50px;
-  width: 484px;
-}
-
-.tela-emprstimo .text-wrapper-3 {
-  color: #000000;
-  font-family: "Exo 2", Helvetica;
-  font-size: 20px;
-  font-weight: 400;
-  left: 35px;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
   text-align: center;
-  top: 15px;
+  top: 40px;
   white-space: nowrap;
 }
 
-.tela-emprstimo .text-wrapper-4 {
-  color: #000000;
-  font-family: "Exo 2", Helvetica;
-  font-size: 20px;
-  font-weight: 400;
-  left: 35px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  text-align: center;
-  top: 133px;
-  white-space: nowrap;
-}
-
-.tela-emprstimo .text-wrapper-5 {
-  color: #000000;
-  font-family: "Exo 2", Helvetica;
-  font-size: 20px;
-  font-weight: 400;
-  left: 35px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  text-align: center;
-  top: 251px;
-  white-space: nowrap;
-}
-
-.tela-emprstimo .expand-arrow {
-  height: 29px;
-  left: 463px;
-  position: absolute;
-  top: 62px;
-  width: 32px;
-}
-
-.tela-emprstimo .forward {
-  height: 30px;
-  left: 463px;
-  position: absolute;
-  top: 180px;
-  width: 32px;
-}
-
-.tela-emprstimo .input-field-instance {
+.tela-emprstimo_emp1 .input-field-instance {
   border-color: #000000 !important;
   border-radius: 10px !important;
   height: 51px !important;
-  left: 21px !important;
+  left: 20px !important;
   position: absolute !important;
-  top: 290px !important;
+  top: 70px !important;
   width: 484px !important;
 }
 
-.tela-emprstimo .design-component-instance-node {
-  top: 14px !important;
+.tela-emprstimo_emp1 .design-component-instance-node {
+  font-family: "Exo 2", Helvetica;
+  transform: translateY(100%);
 }
 
-.tela-emprstimo .button-cria-conta {
+.tela-emprstimo_emp1 .button-cria-conta {
   left: 525px !important;
   position: absolute !important;
   top: 804px !important;
 }
 
-.tela-emprstimo .cria-inactive-instance {
+.tela-emprstimo_emp1 .cria-inactive-instance {
   left: 32px !important;
 }
 
-.tela-emprstimo .button-cria-conta-2 {
+.tela-emprstimo_emp1 .button-cria-conta-2 {
   font-size: 25px !important;
 }

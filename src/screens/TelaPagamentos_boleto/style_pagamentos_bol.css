@@ -14,7 +14,7 @@
   width: 1280px;
 }
 
-.tela-pagamentos-bol .overlap {
+.tela-pagamentos_bol .overlap {
   background-color: #f7f7f7;
   border: 1px solid;
   border-color: #676363;
@@ -25,7 +25,7 @@
   width: 1016px;
 }
 
-.tela-pagamentos .div-wrapper {
+.tela-pagamentos_bol .div-wrapper {
   background-color: #ffffff;
   border: 1px solid;
   border-color: #000000;
@@ -36,7 +36,7 @@
   width: 708px;
 }
 
-.tela-pagamentos .text-wrapper {
+.tela-pagamentos_bol .text-wrapper {
   color: #6b6868;
   font-family: "Exo 2", Helvetica;
   font-size: 20px;
@@ -50,7 +50,7 @@
   white-space: nowrap;
 }
 
-.tela-pagamentos .barcode-approve {
+.tela-pagamentos_bol .barcode-approve {
   height: 59px;
   left: 97px;
   position: absolute;
@@ -58,13 +58,13 @@
   width: 59px;
 }
 
-.tela-pagamentos .button-ext {
+.tela-pagamentos_bol .button-ext {
   left: 449px !important;
   position: absolute !important;
   top: 176px !important;
 }
 
-.tela-pagamentos-bol .overlap-2 {
+.tela-pagamentos_bol .overlap-2 {
   background-color: #f5061d;
   border-radius: 0px 0px 20px 20px;
   height: 80px;
@@ -74,7 +74,7 @@
   width: 1281px;
 }
 
-.tela-pagamentos .text-wrapper-2 {
+.tela-pagamentos_bol .text-wrapper-2 {
   color: #ffffff;
   font-family: "Exo 2", Helvetica;
   font-size: 40px;
@@ -88,13 +88,13 @@
   width: 236px;
 }
 
-.tela-pagamentos-bol .group-29 {
+.tela-pagamentos_bol .group-29 {
   left: 21px !important;
   position: absolute !important;
   top: 11px !important;
 }
 
-.tela-pagamentos-bol .p {
+.tela-pagamentos_bol .p {
   color: #000000;
   font-family: "Exo 2", Helvetica;
   font-size: 40px;
@@ -107,7 +107,7 @@
   white-space: nowrap;
 }
 
-.tela-pagamentos .rectangle-bol-1 {
+.tela-pagamentos_bol .rectangle-bol-1 {
   background-color: #b30808;
   height: 5px;
   left: 246px;
@@ -116,7 +116,7 @@
   width: 250px;
 }
 
-.tela-pagamentos .rectangle-2 {
+.tela-pagamentos_bol .rectangle-2 {
   background-color: #b9b6b6;
   height: 5px;
   left: 508px;
@@ -125,7 +125,7 @@
   width: 250px;
 }
 
-.tela-pagamentos .rectangle-3 {
+.tela-pagamentos_bol .rectangle-3 {
   background-color: #b9b6b6;
   height: 5px;
   left: 770px;
@@ -134,7 +134,7 @@
   width: 250px;
 }
 
-.tela-pagamentos .text-wrapper-3 {
+.tela-pagamentos_bol .text-wrapper-3 {
   color: #000000;
   font-family: "Exo 2", Helvetica;
   font-size: 24px;

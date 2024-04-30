@@ -6,7 +6,7 @@ Please share your feedback here: https://form.asana.com/?k=uvp-HPgd3_hyoXRBw1IcN
 import PropTypes from "prop-types";
 import React from "react";
 import { BlinkingCursor } from "../BlinkingCursor";
-import "./style.css";
+import "./style_PropertyDefault_emp1.css";
 
 export const PropertyDefault = ({
   className,

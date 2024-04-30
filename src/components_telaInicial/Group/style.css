@@ -1,0 +1,39 @@
+.group {
+  height: 148px;
+  position: relative;
+  width: 133px;
+}
+
+.group .coin-in-hand-wrapper {
+  background-color: #f5061d;
+  border-radius: 10px;
+  height: 110px;
+  left: 7px;
+  position: absolute;
+  top: 0;
+  width: 119px;
+}
+
+.group .coin-in-hand {
+  height: 72px;
+  left: 19px;
+  position: absolute;
+  top: 19px;
+  width: 77px;
+}
+
+.group .text-wrapper-5 {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 118px;
+}
+
+.group:hover .coin-in-hand-wrapper {
+  background-color: #4b0007;
+}

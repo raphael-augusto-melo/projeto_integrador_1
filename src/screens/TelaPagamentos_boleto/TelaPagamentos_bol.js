@@ -5,7 +5,7 @@ import "./style_pagamentos_bol.css";
 
 export const TelaPagamentos_bol = () => {
   return (
-    <div className="tela-pagamentos">
+    <div className="tela-pagamentos_bol">
       <div className="div">
         <div className="overlap">
           <div className="div-wrapper">
@@ -16,7 +16,9 @@ export const TelaPagamentos_bol = () => {
             alt="Barcode approve"
             src="https://c.animaapp.com/p1WIWl95/img/barcode-approve@2x.png"
           />
+          <a href="TelaPagamentos_bol2">
           <ExtInactive className="button-ext" text="Avançar" />
+          </a>
         </div>
         <div className="overlap-2">
           <div className="text-wrapper-2">Pagamentos</div>

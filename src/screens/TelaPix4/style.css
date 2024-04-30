@@ -1,0 +1,150 @@
+.tela-pix4 {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.tela-pix4 .overlap-wrapper {
+  background-color: #ffffff;
+  height: 1032px;
+  width: 1280px;
+}
+
+.tela-pix4 .overlap {
+  height: 1034px;
+  position: relative;
+  top: -2px;
+}
+
+.tela-pix4 .rectangle {
+  height: 1032px;
+  left: 0;
+  position: absolute;
+  top: 2px;
+  width: 1280px;
+}
+
+.tela-pix4 .rectangle-2 {
+  background-color: #f7f7f7;
+  border: 1px solid;
+  border-color: #676363;
+  height: 244px;
+  left: 325px;
+  position: absolute;
+  top: 300px;
+  width: 630px;
+}
+
+.tela-pix4 .rectangle-3 {
+  background-color: #f5061d;
+  border-radius: 0px 0px 20px 20px;
+  height: 75px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1280px;
+}
+
+.tela-pix4 .text-wrapper-2 {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 36px;
+  font-weight: 400;
+  left: 449px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 156px;
+  white-space: nowrap;
+}
+
+.tela-pix4 .text-wrapper-3 {
+  color: #ffffff;
+  font-family: "Exo 2", Helvetica;
+  font-size: 40px;
+  font-weight: 400;
+  left: 556px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 12px;
+  white-space: nowrap;
+  width: 167px;
+}
+
+.tela-pix4 .group-29 {
+  left: 17px !important;
+  position: absolute !important;
+  top: 9px !important;
+}
+
+.tela-pix4 .contacts {
+  height: 69px;
+  left: 347px;
+  position: absolute;
+  top: 386px;
+  width: 71px;
+}
+
+.tela-pix4 .text-wrapper-4 {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 443px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 318px;
+  white-space: nowrap;
+}
+
+.tela-pix4 .text-wrapper-5 {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 443px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 419px;
+  white-space: nowrap;
+}
+
+.tela-pix4 .button-ent-ent-inactive {
+  left: 940px !important;
+  position: absolute !important;
+  top: 912px !important;
+}
+
+.tela-pix4 .input-field-instance {
+  border-color: #000000 !important;
+  border-radius: unset !important;
+  height: 54px !important;
+  left: 443px !important;
+  position: absolute !important;
+  top: 351px !important;
+  width: 449px !important;
+}
+
+.tela-pix4 .design-component-instance-node {
+  font-family: "Exo 2", Helvetica !important;
+  font-size: 20px !important;
+  top: 15px !important;
+}
+
+.tela-pix4 .input-field-2 {
+  border-color: #000000 !important;
+  border-radius: unset !important;
+  height: 54px !important;
+  left: 443px !important;
+  position: absolute !important;
+  top: 459px !important;
+  width: 449px !important;
+}

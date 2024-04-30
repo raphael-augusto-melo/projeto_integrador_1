@@ -1,0 +1,23 @@
+.ext-inactive {
+  align-items: center;
+  background-color: #f5061d;
+  border-radius: 45px;
+  display: inline-flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 7px 20px;
+  position: relative;
+}
+
+.ext-inactive .ver-extrato {
+  color: #ffffff;
+  font-family: "Exo 2", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}

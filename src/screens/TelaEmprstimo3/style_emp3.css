@@ -1,0 +1,354 @@
+.tela-emprstimo_emp3 {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.tela-emprstimo_emp3 .div {
+  background-color: #ffffff;
+  height: 1024px;
+  overflow: hidden;
+  position: relative;
+  width: 1280px;
+}
+
+.tela-emprstimo_emp3 .overlap {
+  background-color: #f5061d;
+  border-radius: 0px 0px 20px 20px;
+  height: 80px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1281px;
+}
+
+.tela-emprstimo_emp3 .text-wrapper {
+  color: #ffffff;
+  font-family: "Exo 2", Helvetica;
+  font-size: 40px;
+  font-weight: 400;
+  left: 517px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 16px;
+  white-space: nowrap;
+  width: 248px;
+}
+
+.tela-emprstimo_emp3 .group-29 {
+  left: 17px !important;
+  position: absolute !important;
+  top: 11px !important;
+}
+
+.tela-emprstimo_emp3 .p {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 40px;
+  font-weight: 400;
+  left: 157px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 131px;
+  width: 968px;
+}
+
+.tela-emprstimo_emp3 .rectangle {
+  background-color: #b30808;
+  height: 5px;
+  left: 246px;
+  position: absolute;
+  top: 295px;
+  width: 250px;
+}
+
+.tela-emprstimo_emp3 .rectangle-2 {
+  background-color: #b40808;
+  height: 5px;
+  left: 508px;
+  position: absolute;
+  top: 295px;
+  width: 250px;
+}
+
+.tela-emprstimo_emp3 .rectangle-3 {
+  background-color: #b40808;
+  height: 5px;
+  left: 770px;
+  position: absolute;
+  top: 295px;
+  width: 250px;
+}
+
+.tela-emprstimo_emp3 .text-wrapper-2 {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  left: 246px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 254px;
+}
+
+.tela-emprstimo_emp3 .overlap-2 {
+  height: 525px;
+  left: 246px;
+  position: absolute;
+  top: 336px;
+  width: 778px;
+}
+
+.tela-emprstimo_emp3 .overlap-group-wrapper {
+  height: 525px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 778px;
+}
+
+.tela-emprstimo_emp3 .overlap-group-2 {
+  background-color: #f7f7f7;
+  border: 1px solid;
+  border-color: #676363;
+  border-radius: 10px;
+  height: 525px;
+  position: relative;
+  width: 774px;
+}
+
+.tela-emprstimo_emp3 .overlap-3 {
+  border-radius: 10px;
+  height: 48px;
+  left: 29px;
+  position: absolute;
+  top: 321px;
+  width: 484px;
+}
+
+.tela-emprstimo_emp3 .expand-arrow-wrapper {
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #000000;
+  border-radius: 10px;
+  height: 48px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 484px;
+}
+
+.tela-emprstimo_emp3 .expand-arrow {
+  height: 27px;
+  left: 441px;
+  position: absolute;
+  top: 9px;
+  width: 32px;
+}
+
+.tela-emprstimo_emp3 .text-wrapper-3 {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 10px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 13px;
+  white-space: nowrap;
+  width: 82px;
+}
+
+.tela-emprstimo_emp3 .text-wrapper-4 {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 28px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 290px;
+  white-space: nowrap;
+  width: 313px;
+}
+
+.tela-emprstimo_emp3 .text-wrapper-5 {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 32px;
+  font-weight: 400;
+  left: 218px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 15px;
+  white-space: nowrap;
+}
+
+.tela-emprstimo_emp3 .group-2 {
+  height: 38px;
+  left: 266px;
+  position: absolute;
+  top: 66px;
+  width: 243px;
+}
+
+.tela-emprstimo_emp3 .text-wrapper-6 {
+  color: #f5061d;
+  font-family: "Exo 2", Helvetica;
+  font-size: 32px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  white-space: nowrap;
+}
+
+.tela-emprstimo_emp3 .edit {
+  height: 35px;
+  left: 206px;
+  position: absolute;
+  top: 0;
+  width: 35px;
+}
+
+.tela-emprstimo_emp3 .text-wrapper-7 {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 29px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 130px;
+  white-space: nowrap;
+}
+
+.tela-emprstimo_emp3 .img-wrapper {
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #000000;
+  border-radius: 10px;
+  height: 51px;
+  left: 29px;
+  position: absolute;
+  top: 167px;
+  width: 484px;
+}
+
+.tela-emprstimo_emp3 .img {
+  height: 29px;
+  left: 441px;
+  position: absolute;
+  top: 10px;
+  width: 32px;
+}
+
+.tela-emprstimo_emp3 .text-wrapper-8 {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 42px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 180px;
+  white-space: nowrap;
+}
+
+.tela-emprstimo_emp3 .text-wrapper-9 {
+  color: #6f6e6e;
+  font-family: "Exo 2", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 29px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 217px;
+  white-space: nowrap;
+}
+
+.tela-emprstimo_emp3 .line {
+  height: 1px;
+  left: 29px;
+  object-fit: cover;
+  position: absolute;
+  top: 267px;
+  width: 691px;
+}
+
+.tela-emprstimo_emp3 .line-2 {
+  height: 1px;
+  left: 29px;
+  object-fit: cover;
+  position: absolute;
+  top: 419px;
+  width: 691px;
+}
+
+.tela-emprstimo_emp3 .text-wrapper-10 {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 48px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 442px;
+  width: 711px;
+}
+
+.tela-emprstimo_emp3 .unchecked-checkbox {
+  height: 33px;
+  left: 29px;
+  position: absolute;
+  top: 446px;
+  width: 35px;
+}
+
+.tela-emprstimo_emp3 .frame {
+  align-items: center;
+  background-color: #f5061d;
+  border-radius: 45px;
+  display: inline-flex;
+  gap: 10px;
+  height: 58px;
+  justify-content: center;
+  left: 499px;
+  padding: 2px 36px;
+  position: absolute;
+  top: 897px;
+}
+
+.tela-emprstimo_emp3 .text-wrapper-11 {
+  color: #ffffff;
+  font-family: "Exo 2", Helvetica;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}

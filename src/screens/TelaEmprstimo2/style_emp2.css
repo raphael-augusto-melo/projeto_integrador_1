@@ -1,4 +1,4 @@
-.tela-emprstimo {
+.tela-emprstimo_emp2 {
   background-color: #ffffff;
   display: flex;
   flex-direction: row;
@@ -6,7 +6,7 @@
   width: 100%;
 }
 
-.tela-emprstimo .div {
+.tela-emprstimo_emp2 .div {
   background-color: #ffffff;
   height: 1024px;
   overflow: hidden;
@@ -14,7 +14,7 @@
   width: 1280px;
 }
 
-.tela-emprstimo .overlap {
+.tela-emprstimo_emp2 .overlap {
   background-color: #f5061d;
   border-radius: 0px 0px 20px 20px;
   height: 80px;
@@ -24,7 +24,7 @@
   width: 1281px;
 }
 
-.tela-emprstimo .text-wrapper {
+.tela-emprstimo_emp2 .text-wrapper {
   color: #ffffff;
   font-family: "Exo 2", Helvetica;
   font-size: 40px;
@@ -38,13 +38,13 @@
   width: 248px;
 }
 
-.tela-emprstimo .group-29 {
+.tela-emprstimo_emp2 .group-29 {
   left: 16px !important;
   position: absolute !important;
   top: 10px !important;
 }
 
-.tela-emprstimo .p {
+.tela-emprstimo_emp2 .p {
   color: #000000;
   font-family: "Exo 2", Helvetica;
   font-size: 40px;
@@ -57,7 +57,7 @@
   width: 968px;
 }
 
-.tela-emprstimo .rectangle {
+.tela-emprstimo_emp2 .rectangle {
   background-color: #b30808;
   height: 5px;
   left: 246px;
@@ -66,7 +66,7 @@
   width: 250px;
 }
 
-.tela-emprstimo .rectangle-2 {
+.tela-emprstimo_emp2 .rectangle-2 {
   background-color: #b40808;
   height: 5px;
   left: 508px;
@@ -75,7 +75,7 @@
   width: 250px;
 }
 
-.tela-emprstimo .rectangle-3 {
+.tela-emprstimo_emp2 .rectangle-3 {
   background-color: #b9b6b6;
   height: 5px;
   left: 770px;
@@ -84,7 +84,7 @@
   width: 250px;
 }
 
-.tela-emprstimo .text-wrapper-2 {
+.tela-emprstimo_emp2 .text-wrapper-2 {
   color: #000000;
   font-family: "Exo 2", Helvetica;
   font-size: 24px;
@@ -96,8 +96,8 @@
   top: 254px;
 }
 
-.tela-emprstimo .overlap-2 {
-  background: linear-gradient(180deg, rgb(244.37, 196.52, 196.52) 0%, rgb(232.69, 92.11, 92.11) 100%);
+.tela-emprstimo_emp2 .overlap-2 {
+  background-color: #f7f7f7;
   border: 1px solid;
   border-color: #676363;
   border-radius: 10px;
@@ -108,7 +108,7 @@
   width: 525px;
 }
 
-.tela-emprstimo .qual-o-valor-que-wrapper {
+.tela-emprstimo_emp2 .qual-o-valor-que-wrapper {
   height: 21px;
   left: 64px;
   position: absolute;
@@ -116,7 +116,7 @@
   width: 396px;
 }
 
-.tela-emprstimo .qual-o-valor-que {
+.tela-emprstimo_emp2 .qual-o-valor-que {
   color: #000000;
   font-family: "Exo 2", Helvetica;
   font-size: 20px;
@@ -131,7 +131,7 @@
   width: 394px;
 }
 
-.tela-emprstimo .rectangle-4 {
+.tela-emprstimo_emp2 .rectangle-4 {
   background-color: #ffffff;
   border: 1px solid;
   border-color: #000000;
@@ -143,16 +143,16 @@
   width: 484px;
 }
 
-.tela-emprstimo .button-cria-conta {
+.tela-emprstimo_emp2 .button-cria-conta {
   left: 525px !important;
   position: absolute !important;
   top: 670px !important;
 }
 
-.tela-emprstimo .cria-inactive-instance {
+.tela-emprstimo_emp2 .cria-inactive-instance {
   left: -36px !important;
 }
 
-.tela-emprstimo .design-component-instance-node {
+.tela-emprstimo_emp2 .design-component-instance-node {
   font-size: 25px !important;
 }

@@ -5,7 +5,7 @@ import "./style_emp2.css";
 
 export const TelaEmprstimo2 = () => {
   return (
-    <div className="tela-emprstimo">
+    <div className="tela-emprstimo_emp2">
       <div className="div">
         <div className="overlap">
           <div className="text-wrapper">Empréstimos</div>

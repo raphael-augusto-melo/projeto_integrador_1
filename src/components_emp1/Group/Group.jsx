@@ -6,7 +6,7 @@ Please share your feedback here: https://form.asana.com/?k=uvp-HPgd3_hyoXRBw1IcN
 import PropTypes from "prop-types";
 import React from "react";
 import { useReducer } from "react";
-import "./style.css";
+import "./style_Group_emp1.css";
 
 export const Group = ({ property1, className }) => {
   const [state, dispatch] = useReducer(reducer, {
@@ -25,6 +25,7 @@ export const Group = ({ property1, className }) => {
     >
       <div className="overlap-group">
         <div className={`ellipse ${state.property1}`} />
+        <a href="/TelaInicial">
         <img
           className="left-arrow"
           alt="Left arrow"
@@ -34,6 +35,7 @@ export const Group = ({ property1, className }) => {
               : "https://c.animaapp.com/Dv9UGHf1/img/left-arrow-2@2x.png"
           }
         />
+        </a>
       </div>
     </div>
   );

@@ -14,7 +14,8 @@
   }
   
   .cadastro .overlap {
-    background: linear-gradient(180deg, rgb(255, 200.81, 200.81) 0%, rgba(240.12, 16.01, 16.01, 0.73) 100%);
+    background-color: #f7f7f7;
+    border: 1px solid #676363;
     border-radius: 10px;
     height: 896px;
     left: 25px;

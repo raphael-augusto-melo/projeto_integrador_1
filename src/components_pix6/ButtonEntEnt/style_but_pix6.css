@@ -1,0 +1,29 @@
+.button-ent-ent6 {
+  height: 58px;
+  width: 164px;
+}
+
+.button-ent-ent6 .frame {
+  align-items: center;
+  background-color: #f5061d;
+  border-radius: 45px;
+  display: inline-flex;
+  gap: 10px;
+  height: 58px;
+  justify-content: center;
+  left: -14px;
+  padding: 2px 36px;
+  position: relative;
+}
+
+.button-ent-ent6 .text-wrapper {
+  color: #ffffff;
+  font-family: "Exo 2", Helvetica;
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}

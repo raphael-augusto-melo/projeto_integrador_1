@@ -13,7 +13,7 @@
   width: 119px;
 }
 
-.icon-pag-inactive .text-wrapper-2 {
+.icon-pag-inactive .text-wrapper-4 {
   color: #000000;
   font-family: "Exo 2", Helvetica;
   font-size: 24px;
@@ -26,8 +26,8 @@
 
 .icon-pag-inactive .barcode {
   height: 59px;
-  left: -3802px;
+  left: 39px;
   position: absolute;
-  top: -1293px;
+  top: 25px;
   width: 59px;
 }

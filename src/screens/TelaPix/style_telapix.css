@@ -1,0 +1,411 @@
+.tela-pix1 {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.tela-pix1 .overlap-wrapper {
+  background-color: #ffffff;
+  height: 1032px;
+  width: 1280px;
+}
+
+.tela-pix1 .overlap {
+  height: 1034px;
+  position: relative;
+  top: -2px;
+}
+
+.tela-pix1 .rectangle {
+  height: 1032px;
+  left: 0;
+  position: absolute;
+  top: 2px;
+  width: 1280px;
+}
+
+.tela-pix1 .rectangle-2 {
+  background-color: #f5061d;
+  border-radius: 0px 0px 20px 20px;
+  height: 75px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1280px;
+}
+
+.tela-pix1 .text-wrapper {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 36px;
+  font-weight: 400;
+  left: 391px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 102px;
+  white-space: nowrap;
+}
+
+.tela-pix1 .text-wrapper-2 {
+  color: #ffffff;
+  font-family: "Exo 2", Helvetica;
+  font-size: 40px;
+  font-weight: 400;
+  left: 556px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 12px;
+  white-space: nowrap;
+  width: 167px;
+}
+
+.tela-pix1 .p {
+  color: #6b6868;
+  font-family: "Exo 2", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 445px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 258px;
+  white-space: nowrap;
+}
+
+.tela-pix1 .text-wrapper-3 {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 275px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 481px;
+  white-space: nowrap;
+}
+
+.tela-pix1 .text-wrapper-4 {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 446px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 481px;
+  white-space: nowrap;
+}
+
+.tela-pix1 .text-wrapper-5 {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 441px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 605px;
+  white-space: nowrap;
+}
+
+.tela-pix1 .text-wrapper-6 {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 265px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 605px;
+  white-space: nowrap;
+}
+
+.tela-pix1 .contacts {
+  height: 60px;
+  left: 295px;
+  position: absolute;
+  top: 546px;
+  width: 60px;
+}
+
+.tela-pix1 .line {
+  height: 288px;
+  left: 640px;
+  object-fit: cover;
+  position: absolute;
+  top: 356px;
+  width: 1px;
+}
+
+.tela-pix1 .img {
+  height: 60px;
+  left: 297px;
+  position: absolute;
+  top: 421px;
+  width: 60px;
+}
+
+.tela-pix1 .contacts-2 {
+  height: 60px;
+  left: 916px;
+  position: absolute;
+  top: 421px;
+  width: 60px;
+}
+
+.tela-pix1 .contacts-3 {
+  height: 60px;
+  left: 468px;
+  position: absolute;
+  top: 546px;
+  width: 60px;
+}
+
+.tela-pix1 .contacts-4 {
+  height: 60px;
+  left: 745px;
+  position: absolute;
+  top: 421px;
+  width: 60px;
+}
+
+.tela-pix1 .contacts-5 {
+  height: 60px;
+  left: 468px;
+  position: absolute;
+  top: 421px;
+  width: 60px;
+}
+
+.tela-pix1 .group-2 {
+  height: 64px;
+  left: 750px;
+  position: absolute;
+  top: 328px;
+  width: 204px;
+}
+
+.tela-pix1 .text-wrapper-7 {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 32px;
+  font-weight: 400;
+  left: 65px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 17px;
+  white-space: nowrap;
+}
+
+.tela-pix1 .img-2 {
+  height: 64px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 58px;
+}
+
+.tela-pix1 .line-2 {
+  height: 1px;
+  left: 223px;
+  object-fit: cover;
+  position: absolute;
+  top: 323px;
+  width: 834px;
+}
+
+.tela-pix1 .line-3 {
+  height: 1px;
+  left: 223px;
+  object-fit: cover;
+  position: absolute;
+  top: 678px;
+  width: 834px;
+}
+
+.tela-pix1 .group-3 {
+  height: 64px;
+  left: 256px;
+  position: absolute;
+  top: 324px;
+  width: 338px;
+}
+
+.tela-pix1 .text-wrapper-8 {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 32px;
+  font-weight: 400;
+  left: 63px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 17px;
+  white-space: nowrap;
+}
+
+.tela-pix1 .text-wrapper-9 {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 720px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 480px;
+  white-space: nowrap;
+}
+
+.tela-pix1 .agiota-quebra-joelho {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 889px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 473px;
+  width: 139px;
+}
+
+.tela-pix1 .text-wrapper-10 {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 64px;
+  font-weight: 400;
+  left: 493px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 796px;
+  transform: rotate(0.1deg);
+  width: 50px;
+}
+
+.tela-pix1 .text-wrapper-11 {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 32px;
+  font-weight: 400;
+  left: 546px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 781px;
+  transform: rotate(0.1deg);
+  white-space: nowrap;
+}
+
+.tela-pix1 .text-wrapper-12 {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 32px;
+  font-weight: 400;
+  left: 605px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 699px;
+  white-space: nowrap;
+}
+
+.tela-pix1 .text-wrapper-13 {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 32px;
+  font-weight: 400;
+  left: 546px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 840px;
+  transform: rotate(0.1deg);
+  white-space: nowrap;
+}
+
+.tela-pix1 .group-4 {
+  height: 102px;
+  left: 759px;
+  position: absolute;
+  top: 547px;
+  width: 202px;
+}
+
+.tela-pix1 .text-wrapper-14 {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 54px;
+  width: 200px;
+}
+
+.tela-pix1 .plus {
+  height: 53px;
+  left: 73px;
+  position: absolute;
+  top: 0;
+  width: 54px;
+}
+
+.tela-pix1 .settings {
+  height: 62px;
+  left: 535px;
+  position: absolute;
+  top: 688px;
+  width: 62px;
+}
+
+.tela-pix1 .group-29 {
+  left: 17px !important;
+  position: absolute !important;
+  top: 9px !important;
+}
+
+.tela-pix1 .plus-2 {
+  height: 53px;
+  left: 479px;
+  position: absolute;
+  top: 778px;
+  width: 54px;
+}
+
+.tela-pix1 .input-field-instance {
+  border-color: #ac0000 !important;
+  border-radius: 20px !important;
+  height: 57px !important;
+  left: 375px !important;
+  position: absolute !important;
+  top: 162px !important;
+  width: 555px !important;
+}
+
+.tela-pix1 .design-component-instance-node {
+  font-family: "Exo 2", Helvetica !important;
+  font-size: 20px !important;
+  top: 16px !important;
+}

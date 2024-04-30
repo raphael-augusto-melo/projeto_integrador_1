@@ -8,43 +8,43 @@
 
 .tela-inicial .div-2 {
   background-color: #ffffff;
-  height: 1032px;
+  height: 1024px;
   position: relative;
   width: 1280px;
 }
 
 .tela-inicial .overlap {
-  background-image: url(https://c.animaapp.com/dLRYJhiQ/img/rectangle-3.png);
+  background-image: url(https://c.animaapp.com/v0SxTu3L/img/rectangle-3.png);
   background-size: 100% 100%;
-  height: 944px;
+  height: 936px;
   left: 0;
   position: absolute;
   top: 88px;
   width: 1280px;
 }
 
-.tela-inicial .r {
+.tela-inicial .r-saldo-disp {
   color: transparent;
   font-family: "Exo 2", Helvetica;
   font-size: 28px;
   font-weight: 400;
-  left: 248px;
+  left: 228px;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
-  top: 192px;
-  width: 139px;
+  top: 189px;
+  width: 208px;
 }
 
 .tela-inicial .span {
   color: #f5061d;
 }
 
-.tela-inicial .text-wrapper-4 {
+.tela-inicial .text-wrapper-9 {
   color: #040404;
 }
 
-.tela-inicial .overlap-group {
+.tela-inicial .overlap-2 {
   height: 72px;
   left: 720px;
   position: absolute;
@@ -52,7 +52,7 @@
   width: 177px;
 }
 
-.tela-inicial .p {
+.tela-inicial .r-fatura {
   color: transparent;
   font-family: "Exo 2", Helvetica;
   font-size: 28px;
@@ -65,7 +65,7 @@
   width: 143px;
 }
 
-.tela-inicial .text-wrapper-5 {
+.tela-inicial .text-wrapper-10 {
   color: #f5061d;
   font-family: "Exo 2", Helvetica;
   font-size: 30px;
@@ -78,28 +78,28 @@
   width: 177px;
 }
 
-.tela-inicial .overlap-2 {
-  height: 70px;
+.tela-inicial .overlap-3 {
+  height: 74px;
   left: 930px;
   position: absolute;
   top: 150px;
   width: 235px;
 }
 
-.tela-inicial .r-2 {
+.tela-inicial .r-lim-disp {
   color: transparent;
   font-family: "Exo 2", Helvetica;
   font-size: 28px;
   font-weight: 400;
-  left: 43px;
+  left: 37px;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
-  top: 33px;
-  width: 130px;
+  top: 37px;
+  width: 162px;
 }
 
-.tela-inicial .text-wrapper-6 {
+.tela-inicial .text-wrapper-11 {
   color: #f5061d;
   font-family: "Exo 2", Helvetica;
   font-size: 30px;
@@ -112,7 +112,7 @@
   width: 235px;
 }
 
-.tela-inicial .text-wrapper-7 {
+.tela-inicial .text-wrapper-12 {
   color: #f5061d;
   font-family: "Exo 2", Helvetica;
   font-size: 30px;
@@ -160,7 +160,7 @@
   width: 1px;
 }
 
-.tela-inicial .img {
+.tela-inicial .line-2 {
   height: 4px;
   left: 153px;
   object-fit: cover;
@@ -185,33 +185,17 @@
   width: 89px;
 }
 
-.tela-inicial .text-wrapper-8 {
+.tela-inicial .text-wrapper-13 {
   color: #000000;
   font-family: "Exo 2", Helvetica;
   font-size: 30px;
   font-weight: 400;
-  left: 526px;
+  left: 533px;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
   top: 437px;
   white-space: nowrap;
-}
-
-.tela-inicial .forward {
-  height: 96px;
-  left: 952px;
-  position: absolute;
-  top: 605px;
-  width: 96px;
-}
-
-.tela-inicial .back {
-  height: 96px;
-  left: 189px;
-  position: absolute;
-  top: 605px;
-  width: 96px;
 }
 
 .tela-inicial .button-ext {
@@ -221,70 +205,15 @@
 }
 
 .tela-inicial .button-icon-pix {
-  height: 148px;
-  left: 330px;
-  position: absolute;
-  top: 519px;
-  width: 119px;
-}
-
-.tela-inicial .img-wrapper {
-  background-color: #f5061d;
-  border-radius: 10px;
-  height: 110px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 119px;
-}
-
-.tela-inicial .image-2 {
-  height: 62px;
-  left: 28px;
-  object-fit: cover;
-  position: absolute;
-  top: 28px;
-  width: 61px;
-}
-
-.tela-inicial .text-wrapper-9 {
-  color: #000000;
-  font-family: "Exo 2", Helvetica;
-  font-size: 24px;
-  font-weight: 400;
-  left: 42px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 118px;
+  left: 458px !important;
+  position: absolute !important;
+  top: 531px !important;
 }
 
 .tela-inicial .button-icon-ext {
-  height: 148px;
-  left: 554px;
-  position: absolute;
-  top: 519px;
-  width: 119px;
-}
-
-.tela-inicial .list-view {
-  height: 59px;
-  left: 33px;
-  position: absolute;
-  top: 25px;
-  width: 53px;
-}
-
-.tela-inicial .text-wrapper-10 {
-  color: #000000;
-  font-family: "Exo 2", Helvetica;
-  font-size: 24px;
-  font-weight: 400;
-  left: 13px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 118px;
+  left: 682px !important;
+  position: absolute !important;
+  top: 531px !important;
 }
 
 .tela-inicial .button-ver-fat {
@@ -294,299 +223,40 @@
 }
 
 .tela-inicial .button-icon-pag {
-  left: 769px !important;
+  left: 673px !important;
   position: absolute !important;
-  top: 519px !important;
+  top: 737px !important;
 }
 
-.tela-inicial .icon-pag-inactive-instance {
-  left: 39px !important;
-  top: 25px !important;
-}
-
-.tela-inicial .frame-25 {
-  left: 330px !important;
+.tela-inicial .group-26 {
+  left: 453px !important;
   position: absolute !important;
-  top: 726px !important;
-}
-
-.tela-inicial .frame-instance {
-  left: 34px !important;
-  top: 29px !important;
-}
-
-.tela-inicial .group {
-  height: 148px;
-  left: 545px;
-  position: absolute;
-  top: 726px;
-  width: 133px;
-}
-
-.tela-inicial .coin-in-hand-wrapper {
-  background-color: #f5061d;
-  border-radius: 10px;
-  height: 110px;
-  left: 7px;
-  position: absolute;
-  top: 0;
-  width: 119px;
-}
-
-.tela-inicial .coin-in-hand {
-  height: 72px;
-  left: 19px;
-  position: absolute;
-  top: 19px;
-  width: 77px;
-}
-
-.tela-inicial .text-wrapper-11 {
-  color: #000000;
-  font-family: "Exo 2", Helvetica;
-  font-size: 24px;
-  font-weight: 400;
-  left: 0;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 118px;
-}
-
-.tela-inicial .overlap-wrapper {
-  height: 148px;
-  left: 756px;
-  position: absolute;
-  top: 726px;
-  width: 164px;
-}
-
-.tela-inicial .overlap-3 {
-  height: 148px;
-  position: relative;
-}
-
-.tela-inicial .group-wrapper {
-  height: 148px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 164px;
-}
-
-.tela-inicial .group-2 {
-  height: 148px;
-  position: relative;
-  width: 166px;
-}
-
-.tela-inicial .rectangle-3 {
-  background-color: #f5061d;
-  border-radius: 10px;
-  height: 110px;
-  left: 22px;
-  position: absolute;
-  top: 0;
-  width: 119px;
-}
-
-.tela-inicial .text-wrapper-12 {
-  color: #000000;
-  font-family: "Exo 2", Helvetica;
-  font-size: 24px;
-  font-weight: 500;
-  left: 0;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  top: 119px;
-}
-
-.tela-inicial .group-3 {
-  background-image: url(https://c.animaapp.com/dLRYJhiQ/img/online-money-transfer-2@2x.png);
-  background-size: 100% 100%;
-  height: 71px;
-  left: 45px;
-  position: absolute;
-  top: 19px;
-  width: 77px;
+  top: 737px !important;
 }
 
 .tela-inicial .overlap-4 {
-  height: 85px;
+  background-color: #f5061d;
+  border-radius: 0px 0px 20px 20px;
+  height: 75px;
   left: 0;
   position: absolute;
   top: -2px;
   width: 1280px;
 }
 
-.tela-inicial .rectangle-4 {
-  background-color: #f5061d;
-  border-radius: 0px 0px 20px 20px;
-  height: 75px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 1280px;
-}
-
-.tela-inicial .male-user {
-  height: 83px;
-  left: 1199px;
-  position: absolute;
-  top: 2px;
-  width: 67px;
-}
-
 .tela-inicial .ceubank {
   height: 59px;
-  left: 17px;
+  left: 507px;
   object-fit: cover;
   position: absolute;
-  top: 11px;
+  top: 13px;
   width: 238px;
 }
 
-.tela-inicial .frame-wrapper {
-  height: 32px;
-  left: 612px;
-  position: absolute;
-  top: 43px;
-  width: 103px;
-}
-
-.tela-inicial .div-wrapper {
-  align-items: center;
-  background-color: #f44858;
-  border-radius: 10px 0px 0px 0px;
-  display: flex;
-  gap: 10px;
-  height: 32px;
-  justify-content: center;
-  overflow: hidden;
-  padding: 4px 28px;
-  position: relative;
-  width: 103px;
-}
-
-.tela-inicial .text-wrapper-13 {
-  color: #ffffff;
-  font-family: "Exo 2", Helvetica;
-  font-size: 20px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: normal;
-  margin-left: -0.45px;
-  margin-right: -0.45px;
-  margin-top: -1.14px;
-  position: relative;
-  white-space: nowrap;
-  width: fit-content;
-}
-
-.tela-inicial .group-4 {
-  height: 32px;
-  left: 715px;
-  position: absolute;
-  top: 43px;
-  width: 123px;
-}
-
-.tela-inicial .frame-2 {
-  align-items: center;
-  background-color: #f44858;
-  display: flex;
-  gap: 10px;
-  height: 32px;
-  justify-content: center;
-  padding: 4px 28px;
-  position: relative;
-  width: 123px;
-}
-
-.tela-inicial .text-wrapper-14 {
-  color: #ffffff;
-  font-family: "Exo 2", Helvetica;
-  font-size: 20px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: normal;
-  margin-left: -0.54px;
-  margin-right: -0.54px;
-  margin-top: -1.14px;
-  position: relative;
-  white-space: nowrap;
-  width: fit-content;
-}
-
-.tela-inicial .group-5 {
-  height: 32px;
-  left: 838px;
-  position: absolute;
-  top: 43px;
-  width: 169px;
-}
-
-.tela-inicial .frame-3 {
-  align-items: center;
-  background-color: #f44858;
-  display: flex;
-  gap: 10px;
-  height: 32px;
-  justify-content: center;
-  padding: 4px 28px;
-  position: relative;
-  width: 169px;
-}
-
-.tela-inicial .text-wrapper-15 {
-  color: #ffffff;
-  font-family: "Exo 2", Helvetica;
-  font-size: 20px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: normal;
-  margin-left: -0.73px;
-  margin-right: -0.73px;
-  margin-top: -1.14px;
-  position: relative;
-  white-space: nowrap;
-  width: fit-content;
-}
-
-.tela-inicial .group-6 {
-  height: 32px;
-  left: 1003px;
-  position: absolute;
-  top: 43px;
-  width: 179px;
-}
-
-.tela-inicial .frame-4 {
-  align-items: center;
-  background-color: #f44858;
-  border-radius: 0px 0px 10px 0px;
-  display: flex;
-  gap: 10px;
-  height: 32px;
-  justify-content: center;
-  overflow: hidden;
-  padding: 4px 28px;
-  position: relative;
-  width: 179px;
-}
-
-.tela-inicial .text-wrapper-16 {
-  color: #ffffff;
-  font-family: "Exo 2", Helvetica;
-  font-size: 20px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: normal;
-  margin-left: -5.78px;
-  margin-right: -5.78px;
-  margin-top: -1.14px;
-  position: relative;
-  white-space: nowrap;
-  width: fit-content;
+.tela-inicial .component-2 {
+  background-image: url(https://c.animaapp.com/v0SxTu3L/img/male-user-2@2x.png) !important;
+  height: 73px !important;
+  left: 0 !important;
+  position: absolute !important;
+  top: 2px !important;
 }

@@ -1,0 +1,1 @@
+export { PixIconInactive } from "./PixIconInactive";

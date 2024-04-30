@@ -1,0 +1,77 @@
+.input-field_pix5 {
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #d4d7de;
+  border-radius: 4px;
+  height: 44px;
+  width: 327px;
+}
+
+.input-field_pix5 .div {
+  height: 15px;
+  position: relative;
+}
+
+.input-field_pix5 .element {
+  left: 288px !important;
+  position: absolute !important;
+  top: 0 !important;
+  border: none;
+  height: 100%;
+  width: 100%;
+  transform: translateX(-60%);
+  font-family: "Exo 2", Helvetica;
+  font-size: 18px;
+  outline: none;
+  padding: 10px;
+}
+
+.input-field_pix5 .property-1-default {
+  left: 276px !important;
+  position: absolute !important;
+  top: 0 !important;
+}
+
+.input-field_pix5 .property-default-instance {
+  left: 264px !important;
+  position: absolute !important;
+  top: 0 !important;
+}
+
+.input-field_pix5 .property-1-default-instance {
+  left: 253px !important;
+  position: absolute !important;
+  top: 0 !important;
+}
+
+.input-field_pix5 .instance-node {
+  left: 242px !important;
+  position: absolute !important;
+  top: 0 !important;
+}
+
+.input-field_pix5.default-state {
+  position: relative;
+}
+
+.input-field_pix5.active-state .key-field_pix5 {
+  height: 15px;
+  left: 14px;
+  position: relative;
+  top: 16px;
+  width: 300px;
+}
+
+.input-field_pix5.default-state .key-field_pix5 {
+  color: #323940;
+  font-family: "Exo 2", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  left: 15px;
+  letter-spacing: 0;
+  line-height: normal;
+  opacity: 0.8;
+  position: absolute;
+  top: 12px;
+  white-space: nowrap;
+}

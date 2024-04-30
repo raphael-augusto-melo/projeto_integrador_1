@@ -5,15 +5,15 @@ Please share your feedback here: https://form.asana.com/?k=uvp-HPgd3_hyoXRBw1IcN
 
 import PropTypes from "prop-types";
 import React from "react";
-import "./style.css";
+import "./style_CriaInactive.css";
 
 export const CriaInactive = ({ className, frameClassName, divClassName, text = "Criar conta" }) => {
   return (
-    <div className={`cria-inactive ${className}`}>
+    <a href="/TelaEmprstimo3" className={`cria-inactive ${className}`}>
       <div className={`frame ${frameClassName}`}>
         <div className={`criar-conta ${divClassName}`}>{text}</div>
       </div>
-    </div>
+    </a>
   );
 };
 

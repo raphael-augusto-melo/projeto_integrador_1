@@ -1,0 +1,1 @@
+export { ExtIconInactive } from "./ExtIconInactive";

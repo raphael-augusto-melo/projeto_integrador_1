@@ -1,146 +1,62 @@
-/*
-We're constantly improving the code you see. 
-Please share your feedback here: https://form.asana.com/?k=uvp-HPgd3_hyoXRBw1IcNg&d=1152665201300829
-*/
-
 import PropTypes from "prop-types";
-import React from "react";
-import { useReducer } from "react";
-import { PropertyDefault } from "../PropertyDefault";
+import React, { useReducer } from "react";
 import "./style_inp_emp1.css";
 
-export const InputField = ({ property1, className, keyFieldClassName, text = "Name" }) => {
+export const InputField = ({ className, text = "Renda Mensal" }) => {
   const [state, dispatch] = useReducer(reducer, {
-    property1: property1 || "default-state",
+    property1: "default-state",
+    value: "",
   });
 
-  return (
-    <div
-      className={`input-field ${state.property1} ${className}`}
-      onClick={() => {
-        dispatch("click");
-      }}
-    >
-      <div className={`key-field ${keyFieldClassName}`}>
-        {state.property1 === "default-state" && <>{text}</>}
+  const handleChange = (e) => {
+    const { value } = e.target;
+    const onlyNumbers = value.replace(/\D/g, ""); // Remove todos os caracteres que não são números
+    dispatch({ type: "change", value: onlyNumbers });
+  };
 
-        {state.property1 === "active-state" && (
-          <div className="div">
-            <PropertyDefault className="element" />
-            <PropertyDefault className="property-1-default" />
-            <PropertyDefault
-              blinkingCursorPropertyCursorOn="https://c.animaapp.com/Dv9UGHf1/img/property-1-cursor-on@2x.png"
-              className="property-default-instance"
-            />
-            <PropertyDefault
-              blinkingCursorPropertyCursorOn="https://c.animaapp.com/Dv9UGHf1/img/blinking-cursor-26@2x.png"
-              className="property-1-default-instance"
-            />
-            <PropertyDefault
-              blinkingCursorPropertyCursorOn="https://c.animaapp.com/Dv9UGHf1/img/property-1-cursor-on@2x.png"
-              className="instance-node"
-            />
-            <PropertyDefault
-              blinkingCursorPropertyCursorOn="https://c.animaapp.com/Dv9UGHf1/img/blinking-cursor-26@2x.png"
-              className="element-2"
-            />
-            <PropertyDefault
-              blinkingCursorPropertyCursorOn="https://c.animaapp.com/Dv9UGHf1/img/property-1-cursor-on@2x.png"
-              className="element-3"
-            />
-            <PropertyDefault
-              blinkingCursorPropertyCursorOn="https://c.animaapp.com/Dv9UGHf1/img/blinking-cursor-26@2x.png"
-              className="element-4"
-            />
-            <PropertyDefault
-              blinkingCursorPropertyCursorOn="https://c.animaapp.com/Dv9UGHf1/img/property-1-cursor-on@2x.png"
-              className="element-5"
-            />
-            <PropertyDefault
-              blinkingCursorPropertyCursorOn="https://c.animaapp.com/Dv9UGHf1/img/blinking-cursor-26@2x.png"
-              className="element-6"
-            />
-            <PropertyDefault
-              blinkingCursorPropertyCursorOn="https://c.animaapp.com/Dv9UGHf1/img/property-1-cursor-on@2x.png"
-              className="element-7"
-            />
-            <PropertyDefault
-              blinkingCursorPropertyCursorOn="https://c.animaapp.com/Dv9UGHf1/img/blinking-cursor-26@2x.png"
-              className="element-8"
-            />
-            <PropertyDefault
-              blinkingCursorPropertyCursorOn="https://c.animaapp.com/Dv9UGHf1/img/property-1-cursor-on@2x.png"
-              className="element-9"
-            />
-            <PropertyDefault
-              blinkingCursorPropertyCursorOn="https://c.animaapp.com/Dv9UGHf1/img/blinking-cursor-26@2x.png"
-              className="element-10"
-            />
-            <PropertyDefault
-              blinkingCursorPropertyCursorOn="https://c.animaapp.com/Dv9UGHf1/img/property-1-cursor-on@2x.png"
-              className="element-11"
-            />
-            <PropertyDefault
-              blinkingCursorPropertyCursorOn="https://c.animaapp.com/Dv9UGHf1/img/blinking-cursor-26@2x.png"
-              className="element-12"
-            />
-            <PropertyDefault
-              blinkingCursorPropertyCursorOn="https://c.animaapp.com/Dv9UGHf1/img/property-1-cursor-on@2x.png"
-              className="element-13"
-            />
-            <PropertyDefault
-              blinkingCursorPropertyCursorOn="https://c.animaapp.com/Dv9UGHf1/img/blinking-cursor-26@2x.png"
-              className="element-14"
-            />
-            <PropertyDefault
-              blinkingCursorPropertyCursorOn="https://c.animaapp.com/Dv9UGHf1/img/property-1-cursor-on@2x.png"
-              className="element-15"
-            />
-            <PropertyDefault
-              blinkingCursorPropertyCursorOn="https://c.animaapp.com/Dv9UGHf1/img/blinking-cursor-26@2x.png"
-              className="element-16"
-            />
-            <PropertyDefault
-              blinkingCursorPropertyCursorOn="https://c.animaapp.com/Dv9UGHf1/img/property-1-cursor-on@2x.png"
-              className="element-17"
-            />
-            <PropertyDefault
-              blinkingCursorPropertyCursorOn="https://c.animaapp.com/Dv9UGHf1/img/blinking-cursor-26@2x.png"
-              className="element-18"
-            />
-            <PropertyDefault
-              blinkingCursorPropertyCursorOn="https://c.animaapp.com/Dv9UGHf1/img/property-1-cursor-on@2x.png"
-              className="element-19"
-            />
-            <PropertyDefault
-              blinkingCursorPropertyCursorOn="https://c.animaapp.com/Dv9UGHf1/img/blinking-cursor-26@2x.png"
-              className="element-20"
-            />
-            <PropertyDefault
-              blinkingCursorPropertyCursorOn="https://c.animaapp.com/Dv9UGHf1/img/property-1-cursor-on@2x.png"
-              className="element-21"
-            />
-            <PropertyDefault
-              blinkingCursorPropertyCursorOn="https://c.animaapp.com/Dv9UGHf1/img/blinking-cursor-26@2x.png"
-              className="element-22"
-            />
-          </div>
-        )}
-      </div>
+  return (
+    <div className={`input-field_emp1 ${state.property1} ${className}`}>
+      <input
+        className="key-field"
+        type="text"
+        pattern="[0-9]*" // Aceita apenas números
+        value={state.value}
+        onChange={handleChange} // Alteração para o manipulador de eventos handleChange
+        onFocus={() => dispatch({ type: "click" })}
+        onBlur={() => {
+          if (state.value === "") {
+            dispatch({ type: "blur" });
+          }
+        }}
+      />
+      {state.property1 === "default-state" && state.value === "" && (
+        <div className="default-text">{text}</div>
+      )}
+
+      {state.property1 === "active-state" && (
+        <div className="overlap-group">
+          {/* Componentes PropertyDefault não omitidos para brevidade */}
+        </div>
+      )}
     </div>
   );
 };
 
 function reducer(state, action) {
-  switch (action) {
+  switch (action.type) {
     case "click":
       return {
         ...state,
         property1: "active-state",
       };
+    case "change":
+      return {
+        ...state,
+        value: action.value,
+      };
+    default:
+      return state;
   }
-
-  return state;
 }
 
 InputField.propTypes = {

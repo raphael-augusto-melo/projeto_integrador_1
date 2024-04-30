@@ -10,7 +10,7 @@ import "./style.css";
 export const BlinkingCursor = ({
   property1,
   className,
-  propertyCursorOn = "https://c.animaapp.com/0843AwLU/img/blinking-cursor-25@2x.png",
+  propertyCursorOn = "https://c.animaapp.com/CVAXwU6b/img/blinking-cursor-25@2x.png",
 }) => {
   return (
     <img
@@ -18,7 +18,7 @@ export const BlinkingCursor = ({
       alt="Property cursor ON"
       src={
         property1 === "cursor-OFF"
-          ? "https://c.animaapp.com/0843AwLU/img/property-1-cursor-off@2x.png"
+          ? "https://c.animaapp.com/CVAXwU6b/img/property-1-cursor-off@2x.png"
           : propertyCursorOn
       }
     />

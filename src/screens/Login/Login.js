@@ -53,7 +53,9 @@ export const Login = () => {
           <div className="text-wrapper-4">Senha</div>
           <div className="text-wrapper-5">CPF</div>
           <div className="text-wrapper-6">Acesse a sua conta</div>
+          <a href="/" >
           <div className="text-wrapper-7">Esqueci a senha</div>
+          </a>
           <img
             className="levitating-gradient"
             alt="Levitating gradient"

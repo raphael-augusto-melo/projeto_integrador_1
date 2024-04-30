@@ -1,0 +1,189 @@
+.dropdown-menu {
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #ff0000;
+  display: flex;
+  gap: 16px;
+  height: 48px;
+  padding: 14px 20px;
+  position: relative;
+  width: 322px;
+}
+
+.dropdown-menu .CPF {
+  color: #000000;
+  flex: 1;
+  font-family: "Exo 2", Helvetica;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-bottom: -6px;
+  margin-top: -8px;
+  position: relative;
+  text-align: center;
+}
+
+.dropdown-menu .vector {
+  height: 16.12px;
+  margin-right: -0.71px;
+  position: relative;
+  width: 29.41px;
+}
+
+.dropdown-menu .lista-de-opcoes {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  position: absolute;
+  top: 48px;
+  width: 322px;
+}
+
+.dropdown-menu .option {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: #ffffff;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  padding: 14px 20px;
+  position: relative;
+  width: 100%;
+}
+
+.dropdown-menu .text-wrapper {
+  color: #000000;
+  flex: 1;
+  font-family: "Exo 2", Helvetica;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  text-align: center;
+}
+
+.dropdown-menu .option-wrapper {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: #ffffff;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  padding: 14px 20px;
+  position: relative;
+  width: 100%;
+}
+
+.dropdown-menu .option-2 {
+  color: #000000;
+  flex: 1;
+  font-family: "Exo 2", Helvetica;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  text-align: center;
+}
+
+.dropdown-menu .div-wrapper {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: #ffffff;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  padding: 14px 20px;
+  position: relative;
+  width: 100%;
+}
+
+.dropdown-menu .option-3 {
+  color: #000000;
+  flex: 1;
+  font-family: "Exo 2", Helvetica;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  text-align: center;
+}
+
+.dropdown-menu.visible-options-false {
+  border-radius: 10px;
+}
+
+.dropdown-menu.visible-options-true {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.dropdown-menu .one {
+  border-color: #ff0101;
+  border-left-style: solid;
+  border-left-width: 2px;
+}
+
+.dropdown-menu .two {
+  border-color: #ff0101;
+  border-left-style: solid;
+  border-left-width: 2px;
+}
+
+.dropdown-menu .three {
+  border-color: #ff0101;
+  border-left-style: solid;
+  border-left-width: 2px;
+}
+
+.dropdown-menu .option.one .text-wrapper {
+  margin-top: -2px;
+}
+
+.dropdown-menu .option.three .text-wrapper {
+  margin-top: -1px;
+}
+
+.dropdown-menu .option.two .text-wrapper {
+  margin-top: -1px;
+}
+
+.dropdown-menu .option.default .text-wrapper {
+  margin-top: -1px;
+}
+
+.dropdown-menu .option-wrapper.one .option-2 {
+  margin-top: -1px;
+}
+
+.dropdown-menu .option-wrapper.three .option-2 {
+  margin-top: -1px;
+}
+
+.dropdown-menu .option-wrapper.two .option-2 {
+  margin-top: -2px;
+}
+
+.dropdown-menu .option-wrapper.default .option-2 {
+  margin-top: -1px;
+}
+
+.dropdown-menu .div-wrapper.one .option-3 {
+  margin-top: -1px;
+}
+
+.dropdown-menu .div-wrapper.three .option-3 {
+  margin-top: -2px;
+}
+
+.dropdown-menu .div-wrapper.two .option-3 {
+  margin-top: -1px;
+}
+
+.dropdown-menu .div-wrapper.default .option-3 {
+  margin-top: -1px;
+}

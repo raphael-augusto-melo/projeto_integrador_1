@@ -1,1 +1,1 @@
-export { TelaPix } from "./TelaPix";
+export {TelaPix1} from "./TelaPix";

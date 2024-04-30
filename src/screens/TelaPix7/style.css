@@ -1,0 +1,112 @@
+.tela-pix7 {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.tela-pix7 .overlap-wrapper {
+  background-color: #ffffff;
+  height: 1032px;
+  width: 1280px;
+}
+
+.tela-pix7 .overlap {
+  height: 1034px;
+  position: relative;
+  top: -2px;
+}
+
+.tela-pix7 .rectangle {
+  height: 1032px;
+  left: 0;
+  position: absolute;
+  top: 2px;
+  width: 1280px;
+}
+
+.tela-pix7 .rectangle-2 {
+  background-color: #f5061d;
+  border-radius: 0px 0px 20px 20px;
+  height: 75px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1280px;
+}
+
+.tela-pix7 .text-wrapper-2 {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 36px;
+  font-weight: 400;
+  left: 485px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 149px;
+  white-space: nowrap;
+}
+
+.tela-pix7 .p {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 28px;
+  font-weight: 400;
+  left: 443px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 331px;
+}
+
+.tela-pix7 .text-wrapper-3 {
+  color: #ffffff;
+  font-family: "Exo 2", Helvetica;
+  font-size: 40px;
+  font-weight: 400;
+  left: 556px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 12px;
+  white-space: nowrap;
+  width: 167px;
+}
+
+.tela-pix7 .rectangle-3 {
+  background-color: #f7f7f7;
+  border: 1px solid;
+  border-color: #676363;
+  height: 90px;
+  left: 374px;
+  position: absolute;
+  top: 373px;
+  width: 532px;
+}
+
+.tela-pix7 .group-29 {
+  left: 17px !important;
+  position: absolute !important;
+  top: 9px !important;
+}
+
+.tela-pix7 .button-ent-ent-inactive {
+  left: 940px !important;
+  position: absolute !important;
+  top: 912px !important;
+}
+
+.tela-pix7 .button-ent-ent-instance {
+  left: -19px !important;
+}
+
+.tela-pix7 .dropdown-menu-instance {
+  left: 398px !important;
+  position: absolute !important;
+  top: 392px !important;
+  width: 483px !important;
+}

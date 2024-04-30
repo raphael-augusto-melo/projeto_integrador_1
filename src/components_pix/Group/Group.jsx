@@ -14,7 +14,7 @@ export const Group = ({ property1, className }) => {
   });
 
   return (
-    <a href="/TelaInicial"
+    <div
       className={`group ${className}`}
       onMouseLeave={() => {
         dispatch("mouse_leave");
@@ -23,19 +23,19 @@ export const Group = ({ property1, className }) => {
         dispatch("mouse_enter");
       }}
     >
-      <div className="div">
+      <a href="/TelaInicial" className="overlap-group">
         <div className={`ellipse ${state.property1}`} />
         <img
           className="left-arrow"
           alt="Left arrow"
           src={
             state.property1 === "variant-2"
-              ? "https://c.animaapp.com/0843AwLU/img/left-arrow-1@2x.png"
-              : "https://c.animaapp.com/0843AwLU/img/left-arrow-2@2x.png"
+              ? "https://c.animaapp.com/CVAXwU6b/img/left-arrow-1@2x.png"
+              : "https://c.animaapp.com/CVAXwU6b/img/left-arrow-2@2x.png"
           }
         />
-      </div>
-    </a>
+      </a>
+    </div>
   );
 };
 

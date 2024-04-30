@@ -1,0 +1,352 @@
+.tela-pagamentos_bol3 {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.tela-pagamentos_bol3 .div {
+  background-color: #ffffff;
+  height: 1024px;
+  overflow: hidden;
+  position: relative;
+  width: 1280px;
+}
+
+.tela-pagamentos_bol3 .overlap {
+  background-color: #f7f7f7;
+  border: 1px solid;
+  border-color: #676363;
+  height: 732px;
+  left: 160px;
+  position: absolute;
+  top: 147px;
+  width: 1016px;
+}
+
+.tela-pagamentos_bol3 .text-wrapper {
+  color: #6b6868;
+  font-family: "Exo 2", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 145px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 585px;
+  white-space: nowrap;
+}
+
+.tela-pagamentos_bol3 .rectangle {
+  background-color: #b30808;
+  height: 5px;
+  left: 67px;
+  position: absolute;
+  top: 58px;
+  width: 250px;
+}
+
+.tela-pagamentos_bol3 .rectangle-2 {
+  background-color: #b30808;
+  height: 5px;
+  left: 329px;
+  position: absolute;
+  top: 58px;
+  width: 250px;
+}
+
+.tela-pagamentos_bol3 .rectangle-3 {
+  background-color: #b30808;
+  height: 5px;
+  left: 591px;
+  position: absolute;
+  top: 58px;
+  width: 250px;
+}
+
+.tela-pagamentos_bol3 .text-wrapper-2 {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
+  left: 67px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 17px;
+}
+
+.tela-pagamentos_bol3 .text-wrapper-3 {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 139px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 96px;
+  white-space: nowrap;
+}
+
+.tela-pagamentos_bol3 .text-wrapper-4 {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 141px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 278px;
+  white-space: nowrap;
+}
+
+.tela-pagamentos_bol3 .text-wrapper-5 {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 145px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 375px;
+  white-space: nowrap;
+}
+
+.tela-pagamentos_bol3 .text-wrapper-6 {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 145px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 467px;
+  white-space: nowrap;
+}
+
+.tela-pagamentos_bol3 .text-wrapper-7 {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 147px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 559px;
+  white-space: nowrap;
+}
+
+.tela-pagamentos_bol3 .p {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 145px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 667px;
+  white-space: nowrap;
+}
+
+.tela-pagamentos_bol3 .text-wrapper-8 {
+  color: #6b6868;
+  font-family: "Exo 2", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 139px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 120px;
+  white-space: nowrap;
+}
+
+.tela-pagamentos_bol3 .text-wrapper-9 {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 139px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 187px;
+  white-space: nowrap;
+}
+
+.tela-pagamentos_bol3 .text-wrapper-10 {
+  color: #6b6868;
+  font-family: "Exo 2", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 141px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 211px;
+  white-space: nowrap;
+}
+
+.tela-pagamentos_bol3 .text-wrapper-11 {
+  color: #6b6868;
+  font-family: "Exo 2", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 139px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 302px;
+  white-space: nowrap;
+}
+
+.tela-pagamentos_bol3 .text-wrapper-12 {
+  color: #6b6868;
+  font-family: "Exo 2", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 145px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 400px;
+  white-space: nowrap;
+}
+
+.tela-pagamentos_bol3 .text-wrapper-13 {
+  color: #6b6868;
+  font-family: "Exo 2", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  left: 145px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 492px;
+  white-space: nowrap;
+}
+
+.tela-pagamentos_bol3 .bank {
+  height: 62px;
+  left: 72px;
+  position: absolute;
+  top: 89px;
+  width: 62px;
+}
+
+.tela-pagamentos_bol3 .customer {
+  height: 59px;
+  left: 72px;
+  position: absolute;
+  top: 273px;
+  width: 55px;
+}
+
+.tela-pagamentos_bol3 .coin-in-hand {
+  height: 60px;
+  left: 73px;
+  position: absolute;
+  top: 369px;
+  width: 60px;
+}
+
+.tela-pagamentos_bol3 .barcode {
+  height: 59px;
+  left: 73px;
+  position: absolute;
+  top: 468px;
+  width: 60px;
+}
+
+.tela-pagamentos_bol3 .schedule {
+  height: 60px;
+  left: 73px;
+  position: absolute;
+  top: 554px;
+  width: 60px;
+}
+
+.tela-pagamentos_bol3 .US-dollar {
+  height: 55px;
+  left: 73px;
+  position: absolute;
+  top: 184px;
+  width: 55px;
+}
+
+.tela-pagamentos_bol3 .bonds {
+  height: 59px;
+  left: 75px;
+  position: absolute;
+  top: 649px;
+  width: 59px;
+}
+
+.tela-pagamentos_bol3 .overlap-2 {
+  background-color: #f5061d;
+  border-radius: 0px 0px 20px 20px;
+  height: 80px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1281px;
+}
+
+.tela-pagamentos_bol3 .text-wrapper-14 {
+  color: #ffffff;
+  font-family: "Exo 2", Helvetica;
+  font-size: 40px;
+  font-weight: 400;
+  left: 522px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 16px;
+  white-space: nowrap;
+  width: 236px;
+}
+
+.tela-pagamentos_bol3 .group-29 {
+  left: 21px !important;
+  position: absolute !important;
+  top: 11px !important;
+}
+
+.tela-pagamentos_bol3 .text-wrapper-15 {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 40px;
+  font-weight: 400;
+  left: 519px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 89px;
+  white-space: nowrap;
+}
+
+.tela-pagamentos_bol3 .button-ext {
+  left: 1044px !important;
+  position: absolute !important;
+  top: 946px !important;
+}

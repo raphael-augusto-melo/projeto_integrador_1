@@ -1,0 +1,1 @@
+# Database models, basicamente tudo que tem interação com o banco de dados (flask)
