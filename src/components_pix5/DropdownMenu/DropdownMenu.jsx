@@ -1,11 +1,5 @@
-/*
-We're constantly improving the code you see. 
-Please share your feedback here: https://form.asana.com/?k=uvp-HPgd3_hyoXRBw1IcNg&d=1152665201300829
-*/
-
 import PropTypes from "prop-types";
-import React from "react";
-import { useReducer } from "react";
+import React, { useReducer } from "react";
 import "./style.css";
 
 export const DropdownMenu = ({ option, visibleOptions, className }) => {
@@ -14,14 +8,24 @@ export const DropdownMenu = ({ option, visibleOptions, className }) => {
     visibleOptions: visibleOptions || false,
   });
 
+  const handleOptionClick = (selectedOption) => {
+    dispatch({ type: "select", option: selectedOption });
+    if (state.visibleOptions) {
+      dispatch({ type: "close" });
+    }
+  };
+
+  const toggleDropdown = () => {
+    dispatch({ type: "toggleVisible" });
+  };
+
   return (
     <div
-      className={`dropdown-menu visible-options-${state.visibleOptions} ${className}`}
-      onClick={() => {
-        dispatch("click");
-      }}
+      className={`dropdown-menu ${state.visibleOptions ? "visible-options" : ""} ${className}`}
+      onClick={toggleDropdown} // Remova esta linha
     >
       <div className="CPF">
+        {/* Renderiza o texto da opção selecionada */}
         {state.option === "one" && <>CPF</>}
 
         {state.option === "two" && <>Telefone</>}
@@ -41,13 +45,14 @@ export const DropdownMenu = ({ option, visibleOptions, className }) => {
       />
       {state.visibleOptions && (
         <div className="lista-de-opcoes">
-          <div className={`option ${state.option}`}>
+          {/* Adiciona onClick handlers para cada opção */}
+          <div className={`option ${state.option}`} onClick={() => handleOptionClick("one")}>
             <div className="text-wrapper">CPF</div>
           </div>
-          <div className={`option-wrapper ${state.option}`}>
+          <div className={`option-wrapper ${state.option}`} onClick={() => handleOptionClick("two")}>
             <div className="option-2">Telefone</div>
           </div>
-          <div className={`div-wrapper ${state.option}`}>
+          <div className={`div-wrapper ${state.option}`} onClick={() => handleOptionClick("three")}>
             <div className="option-3">Email</div>
           </div>
         </div>
@@ -57,90 +62,18 @@ export const DropdownMenu = ({ option, visibleOptions, className }) => {
 };
 
 function reducer(state, action) {
-  if (state.option === "default" && state.visibleOptions === false) {
-    switch (action) {
-      case "click":
-        return {
-          option: "default",
-          visibleOptions: true,
-        };
-    }
+  switch (action.type) {
+    case "toggleVisible":
+      return {
+        ...state,
+        visibleOptions: !state.visibleOptions,
+      };
+    case "select":
+      return {
+        ...state,
+        option: action.option,
+      };
+    default:
+      return state;
   }
-
-  if (state.option === "one" && state.visibleOptions === false) {
-    switch (action) {
-      case "click":
-        return {
-          option: "one",
-          visibleOptions: true,
-        };
-    }
-  }
-
-  if (state.option === "one" && state.visibleOptions === true) {
-    switch (action) {
-      case "click":
-        return {
-          option: "one",
-          visibleOptions: false,
-        };
-    }
-  }
-
-  if (state.option === "two" && state.visibleOptions === false) {
-    switch (action) {
-      case "click":
-        return {
-          option: "two",
-          visibleOptions: true,
-        };
-    }
-  }
-
-  if (state.option === "two" && state.visibleOptions === true) {
-    switch (action) {
-      case "click":
-        return {
-          option: "two",
-          visibleOptions: false,
-        };
-    }
-  }
-
-  if (state.option === "default" && state.visibleOptions === true) {
-    switch (action) {
-      case "click":
-        return {
-          option: "default",
-          visibleOptions: false,
-        };
-    }
-  }
-
-  if (state.option === "three" && state.visibleOptions === false) {
-    switch (action) {
-      case "click":
-        return {
-          option: "three",
-          visibleOptions: true,
-        };
-    }
-  }
-
-  if (state.option === "three" && state.visibleOptions === true) {
-    switch (action) {
-      case "click":
-        return {
-          option: "three",
-          visibleOptions: false,
-        };
-    }
-  }
-
-  return state;
 }
-
-DropdownMenu.propTypes = {
-  option: PropTypes.oneOf(["two", "one", "three", "default"]),
-  visibleOptions: PropTypes.bool,
-};

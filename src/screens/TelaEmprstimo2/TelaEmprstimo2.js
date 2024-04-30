@@ -1,6 +1,7 @@
 import React from "react";
 import { CriaInactive } from "../../components_emp2/CriaInactive";
 import { Group } from "../../components_emp2/Group";
+import { InputFieldValor } from "../../components_emp2/InputField_emp2";
 import "./style_emp2.css";
 
 export const TelaEmprstimo2 = () => {
@@ -23,7 +24,9 @@ export const TelaEmprstimo2 = () => {
               Simule até R$100.000,00
             </p>
           </div>
-          <div className="rectangle-4" />
+          <InputFieldValor
+           className="rectangle-4"
+           text={"R$0,00"} />
         </div>
         <CriaInactive
           className="button-cria-conta"

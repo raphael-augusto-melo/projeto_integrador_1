@@ -1,3 +1,4 @@
+/* Estilo base */
 .input-field_pix5 {
   background-color: #ffffff;
   border: 1px solid;
@@ -74,4 +75,19 @@
   position: absolute;
   top: 12px;
   white-space: nowrap;
+}
+
+/* Media queries para responsividade */
+@media screen and (max-width: 768px) {
+  .input-field_pix5 {
+    width: 100%;
+    max-width: 400px; /* Limite máximo para evitar que o campo fique muito largo em telas grandes */
+  }
+
+  .input-field_pix5 .element {
+    left: 10px !important;
+    width: calc(100% - 20px);
+  }
+
+  /* Outras regras de estilo responsivo aqui */
 }

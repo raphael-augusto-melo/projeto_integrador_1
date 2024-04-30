@@ -15,9 +15,9 @@ export const CPFInputField = ({ className, text = "CPF", maxLength }) => {
   };
 
   return (
-    <div className={`input-field ${state.property1} ${className}`}>
+    <div className={`input-field_log ${state.property1} ${className}`}>
       <input
-        className="key-field"
+        className="key-field_log"
         type="text"
         maxLength={maxLength}
         value={state.value}
@@ -71,9 +71,9 @@ export const SenhaInputField = ({ className, text = "Senha", maxLength }) => {
   });
 
   return (
-    <div className={`input-field ${state.property1} ${className}`}>
+    <div className={`input-field_log ${state.property1} ${className}`}>
       <input
-        className="key-field"
+        className="key-field_log"
         type="password"
         maxLength={maxLength}
         value={state.value}

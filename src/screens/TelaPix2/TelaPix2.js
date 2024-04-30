@@ -1,6 +1,7 @@
 import React from "react";
 import { ButtonEntEnt } from "../../components_pix2/ButtonEntEnt";
 import { Group } from "../../components_pix2/Group";
+import { InputFieldValor, InputFieldData } from "../../components_pix2/InputField_pix2";
 import "./style_telapix2.css";
 
 export const TelaPix2 = () => {
@@ -25,14 +26,17 @@ export const TelaPix2 = () => {
           <div className="chave-chave-do">
             Chave: {"{"}chave_do_beneficiario{"}"}
           </div>
-          <div className="rectangle-4" />
-          <div className="rectangle-5" />
+          <InputFieldValor 
+          className="rectangle-4" 
+          text={"R$0,00"}/>
+          <InputFieldData
+           className="rectangle-5"
+           text={"DD/MM/AAAA"}
+           maxLength={8} />
           <div className="text-wrapper-6">Digite o valor</div>
           <div className="text-wrapper-7">Pagar na data</div>
           <div className="rectangle-6" />
           <div className="text-wrapper-8">Saldo Disponível</div>
-          <div className="text-wrapper-9">R$0,00</div>
-          <div className="text-wrapper-10">DD/MM/AAAA</div>
           <div className="r-saldo-disp">
             R${"{"}saldo_disp{"}"}
           </div>

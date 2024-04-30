@@ -6,6 +6,7 @@ import "./style.css";
 
 export const TelaPix7 = () => {
   return (
+    
     <div className="tela-pix7">
       <div className="overlap-wrapper">
         <div className="overlap">
@@ -15,8 +16,10 @@ export const TelaPix7 = () => {
           <p className="p">Escolha o tipo de chave abaixo:</p>
           <div className="text-wrapper-3">Área Pix</div>
           <div className="rectangle-3" />
+          <a href = "/TelaPix">
           <Group className="group-29" property1="default" />
           <ButtonEntEnt className="button-ent-ent-inactive" frameClassName="button-ent-ent-instance" text="Remover" />
+          </a>
           <DropdownMenu
             className="dropdown-menu-instance"
             option="default"

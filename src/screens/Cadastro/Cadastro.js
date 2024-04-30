@@ -1,6 +1,6 @@
 import React from "react";
 import { CriaInactive } from "../../components_cadastro/CriaInactive_cadastro";
-import { InputFieldName, InputFieldCPF, InputFieldERM, InputFieldEmail, InputFieldEndereco, InputFieldRG, InputFieldTelefone } from "../../components_cadastro/InputField_cadastro";
+import { InputFieldName, InputFieldCPF, InputFieldERM, InputFieldEmail, InputFieldEndereco, InputFieldRG, InputFieldTelefone, InputFieldSenha } from "../../components_cadastro/InputField_cadastro";
 import "../style_cadastro.css";
 
 export const Cadastro = () => {
@@ -11,8 +11,18 @@ export const Cadastro = () => {
           <div className="text-wrapper-2">CPF *</div>
           <div className="text-wrapper-3">E-mail *</div>
           <div className="text-wrapper-4">Nome completo *</div>
+          
           <div className="overlap-2">
           <div className="text-wrapper-5">Telefone *</div>
+
+          <InputFieldSenha
+          className="input-field-Senha"
+          keyFieldClassName="design-component-instance-node"
+          property1="default-state"
+          text="Senha"
+          maxLength={8}
+        />
+          
           <InputFieldTelefone
             className="input-field-instance"
             keyFieldClassName="design-component-instance-node"
@@ -25,6 +35,7 @@ export const Cadastro = () => {
           <div className="text-wrapper-7">Estimativa de Renda Mensal</div>
           <div className="text-wrapper-8">Endereço *</div>
           <div className="text-wrapper-9">Preencha as seguintes informações:</div>
+          <div className="text-cad">Senha *</div>
           <CriaInactive
             className="button-cria-conta"
             divClassName="button-cria-conta-2"

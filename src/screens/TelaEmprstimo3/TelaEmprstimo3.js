@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { Group } from "../../components_emp3/Group";
 import "./style_emp3.css";
 
 export const TelaEmprstimo3 = () => {
+  // Estado para controlar se a caixa de seleção está marcada ou não
+  const [isChecked, setIsChecked] = useState(false);
+
+  // Função para alternar o estado da caixa de seleção quando clicada
+  const toggleCheckbox = () => {
+    setIsChecked(!isChecked);
+  };
+
   return (
     <div className="tela-emprstimo_emp3">
       <div className="div">
@@ -48,16 +56,18 @@ export const TelaEmprstimo3 = () => {
             Ao pegar o empréstimo, você se compromete em pagar todas as parcelas. Caso não pague, um agiota irá te
             perseguir até o pagamento total da dívida.
           </p>
-          <img
+          {/* Checkbox real */}
+          <input
+            type="checkbox"
+            checked={isChecked}
+            onChange={toggleCheckbox}
             className="unchecked-checkbox"
-            alt="Unchecked checkbox"
-            src="https://c.animaapp.com/FletUrB1/img/unchecked-checkbox@2x.png"
           />
         </div>
-        <a href = '/TelaEmprstimo4'>
-        <div className="frame">
-          <div className="text-wrapper-11">Pegar emprestado</div>
-        </div>
+        <a href='/TelaEmprstimo4'>
+          <div className="frame">
+            <div className="text-wrapper-11">Pegar emprestado</div>
+          </div>
         </a>
       </div>
     </div>

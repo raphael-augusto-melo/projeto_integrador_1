@@ -1,0 +1,144 @@
+.esq-senha3 {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.esq-senha3 .div-2 {
+  background-color: #ffffff;
+  height: 1024px;
+  position: relative;
+  width: 1280px;
+}
+
+.esq-senha3 .overlap {
+  background: linear-gradient(180deg);
+  border-radius: 10px;
+  height: 896px;
+  left: 25px;
+  position: absolute;
+  top: 103px;
+  width: 1229px;
+}
+
+.esq-senha3 .text-wrapper {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 24px;
+  font-weight: 600;
+  left: 347px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 408px;
+  white-space: nowrap;
+  width: 297px;
+}
+
+.esq-senha3 .text-wrapper-2 {
+  color: #f5061dcc;
+  font-family: "Exo 2", Helvetica;
+  font-size: 35px;
+  font-weight: 600;
+  left: 30px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 17px;
+  width: 591px;
+}
+
+.esq-senha3 .text-wrapper-3 {
+  color: #000000cc;
+  font-family: "Exo 2", Helvetica;
+  font-size: 25px;
+  font-weight: 600;
+  left: 326px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 241px;
+  width: 284px;
+}
+
+.esq-senha3 .button-cria-conta {
+  left: 500px !important;
+  position: absolute !important;
+  top: 596px !important;
+}
+
+.esq-senha3 .cria-inactive-instance {
+  left: 22px !important;
+}
+
+.esq-senha3 .design-component-instance-node {
+  font-size: 25px !important;
+}
+
+.esq-senha3 .input-field-instance {
+  border-color: #ac0000 !important;
+  border-radius: 20px !important;
+  height: 57px !important;
+  left: 343px !important;
+  position: absolute !important;
+  top: 329px !important;
+  width: 555px !important;
+}
+
+.esq-senha3 .input-field-2 {
+  font-family: "Exo 2", Helvetica !important;
+  font-size: 20px !important;
+  top: 16px !important;
+}
+
+.esq-senha3 .input-field-3 {
+  border-color: #ac0000 !important;
+  border-radius: 20px !important;
+  height: 57px !important;
+  left: 343px !important;
+  position: absolute !important;
+  top: 452px !important;
+  width: 555px !important;
+}
+
+.esq-senha3 .text-wrapper-4 {
+  color: #000000;
+  font-family: "Exo 2", Helvetica;
+  font-size: 24px;
+  font-weight: 600;
+  left: 347px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 295px;
+  white-space: nowrap;
+  width: 174px;
+}
+
+.esq-senha3 .overlap-2 {
+  background-color: #f5061d;
+  border-radius: 0px 0px 20px 20px;
+  height: 77px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1280px;
+}
+
+.esq-senha3 .ceubank {
+  height: 74px;
+  left: 530px;
+  object-fit: cover;
+  position: absolute;
+  top: 3px;
+  width: 220px;
+}
+
+.esq-senha3 .group-29 {
+  left: 15px !important;
+  position: absolute !important;
+  top: 10px !important;
+}
+

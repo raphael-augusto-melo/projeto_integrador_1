@@ -1,0 +1,34 @@
+.group {
+  height: 57px;
+  width: 56px;
+}
+
+.group .div {
+  height: 57px;
+  position: relative;
+}
+
+.group .ellipse {
+  border-radius: 28px;
+  height: 56px;
+  left: 0;
+  position: absolute;
+  top: 1px;
+  width: 56px;
+}
+
+.group .left-arrow {
+  height: 56px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 56px;
+}
+
+.group .default {
+  background-color: #ffffff;
+}
+
+.group .variant-2 {
+  background-color: #4b0007;
+}

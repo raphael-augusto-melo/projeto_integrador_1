@@ -242,7 +242,39 @@ InputFieldERM.propTypes = {
   text: PropTypes.string,
 };
 
+export const InputFieldSenha = ({ property1 = "default-state", className, keyFieldClassName, text, maxLength}) => {
+  const [state, dispatch] = useReducer(reducer, {
+    property1,
+    value: "",
+  });
+
+  const handleChange = (event) => {
+    dispatch({ type: "change", value: event.target.value });
+  };
+
+  return (
+    <div className={`input-field ${state.property1} ${className}`}>
+      <input
+        type="password"
+        maxLength={maxLength}
+        value={state.value}
+        onChange={handleChange}
+        className={`element ${state.property1 === "active-state" ? "active" : ""}`}
+        placeholder={state.property1 === "default-state" ? text : ""}
+      />
+    </div>
+  );
+};
+
+InputFieldSenha.propTypes = {
+  property1: PropTypes.string,
+  className: PropTypes.string,
+  keyFieldClassName: PropTypes.string,
+  text: PropTypes.string,
+  maxLength: PropTypes.number,
+};
+
 // Repita para os outros tipos de campos (Nome completo, Telefone, RG, Estimativa de Renda Mensal, Endereço)...
 
-export default  InputFieldName; InputFieldRG; InputFieldTelefone; InputFieldEndereco; InputFieldEmail; InputFieldERM; InputFieldCPF
+export default  InputFieldName; InputFieldRG; InputFieldTelefone; InputFieldEndereco; InputFieldEmail; InputFieldERM; InputFieldCPF; InputFieldSenha
 

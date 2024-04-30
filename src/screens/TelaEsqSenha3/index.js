@@ -1,0 +1,1 @@
+export { EsqSenha } from "./EsqSenha";

@@ -21,6 +21,9 @@ import TelaPix4 from './screens/TelaPix4/TelaPix4';
 import TelaPix5 from './screens/TelaPix5/TelaPix5';
 import TelaPix6 from './screens/TelaPix6/TelaPix6';
 import TelaPix7 from './screens/TelaPix7/TelaPix7';
+import TelaEsqSenha from './screens/TelaEsqSenha/EsqSenha';
+import TelaEsqSenha2 from './screens/TelaEsqSenha2/EsqSenha';
+import TelaEsqSenha3 from './screens/TelaEsqSenha3/EsqSenha';
 
 
 const App = () => {
@@ -47,6 +50,9 @@ const App = () => {
             <Route exact path='/TelaPagamentos_bol3' element={<TelaPagamentos_bol3/>}/>
             <Route exact path='/TelaEmprstimo3' element={<TelaEmprstimo3/>}/>
             <Route exact path='/TelaEmprstimo4' element={<TelaEmprstimo4/>}/>
+            <Route exact path='/TelaEsqSenha' element={<TelaEsqSenha/>}/>
+            <Route exact path='/TelaEsqSenha2' element={<TelaEsqSenha2/>}/>
+            <Route exact path='/TelaEsqSenha3' element={<TelaEsqSenha3/>}/>
           </Routes>
       </Router>
     );

@@ -157,6 +157,19 @@
     white-space: nowrap;
     width: 591px;
   }
+
+  .cadastro .text-cad {
+    color: #000000;
+    font-family: "Exo 2", Helvetica;
+    font-size: 24px;
+    font-weight: 600;
+    left: 639px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 470px;
+    width: 126px;
+  }
   
   .cadastro .button-cria-conta {
     left: 917px !important;
@@ -170,6 +183,15 @@
   
   .cadastro .button-cria-conta-2 {
     font-size: 25px !important;
+  }
+  .cadastro .input-field-Senha{
+    border-color: #ac0000 !important;
+    border-radius: 20px !important;
+    height: 57px !important;
+    position: absolute !important;
+    top: 261px !important;
+    width: 555px !important;
+    align-content: left;
   }
   
   .cadastro .input-field-2 {
@@ -232,7 +254,7 @@
     width: 555px !important;
     align-content: left;
   }
-  
+
   .cadastro .overlap-3 {
     background-color: #f5061d;
     border-radius: 0px 0px 20px 20px;
