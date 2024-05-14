@@ -1,10 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
 import { CadInactive } from "../../components_login/CadInactive_login";
 import { EntInactive } from "../../components_login/EntInactive_login";
-import { InputFieldLogin, SenhaInputField } from "../../components_login/InputField_login/index_input_login";
+import { CPFInputField, SenhaInputField } from "../../components_login/InputField_login/InputField_login.jsx";
 import "../style_login.css";
 
 export const Login = () => {
+  const [cpf, setCpf] = useState("");
+  const [senha, setSenha] = useState("");
+  const [error, setError] = useState("");
+
+  const handleCpfChange = (event) => {
+    setCpf(event.target.value);
+  };
+
+  const handleSenhaChange = (event) => {
+    setSenha(event.target.value);
+  };
+
+  const handleLogin = async () => {
+    try {
+      const response = await fetch("/api/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ cpf, senha }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        // Sucesso: redirecionar ou salvar token
+        localStorage.setItem("token", data.token);
+        window.location.href = "/protected";
+      } else {
+        // Erro: mostrar mensagem de erro
+        setError(data.message || "Erro ao fazer login");
+      }
+    } catch (err) {
+      setError("Erro ao conectar com o servidor");
+    }
+  };
+
   return (
     <div className="login">
       <div className="div">
@@ -35,26 +72,30 @@ export const Login = () => {
         </div>
         <div className="overlap-group-2">
           <div className="rectangle" />
-          <InputFieldLogin
+          <CPFInputField
             className="input-field-instance"
             keyFieldClassName="design-component-instance-node"
-            property1="default-state"
             text="CPF"
             maxLength={11}
+            value={cpf}
+            onChange={handleCpfChange}
           />
           <SenhaInputField
             className="input-field-2"
             keyFieldClassName="design-component-instance-node"
-            property1="default-state"
             text="Senha"
             maxLength={8}
+            value={senha}
+            onChange={handleSenhaChange}
           />
           <p className="p">Insira sua senha de 8 dígitos</p>
           <div className="text-wrapper-4">Senha</div>
           <div className="text-wrapper-5">CPF</div>
           <div className="text-wrapper-6">Acesse a sua conta</div>
-          <a href="/TelaEsqSenha" >
-          <div className="text-wrapper-7">Esqueci a senha</div>
+          {error && <div className="error">{error}</div>}
+          <button className="text-wrapper-7" onClick={handleLogin}>Entrar</button>
+          <a href="/TelaEsqSenha">
+            <div className="text-wrapper-7">Esqueci a senha</div>
           </a>
           <img
             className="levitating-gradient"

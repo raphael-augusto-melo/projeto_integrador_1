@@ -1,1 +1,0 @@
-# main roots e main points (provavelmente terá de ser separado em outros arquivos)
