@@ -24,9 +24,14 @@ export const Cadastro = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3001/auth/register', formData);
+      const response = await axios.post('http://localhost:5000/auth/register', formData);
+      console.log('Resposta do servidor:', response.data); // Para depuração
       alert(response.data.message);
+      if (response.data.message === "Usuário registrado com sucesso") {
+        window.location.href = "/"; // Redirecionar para a página de login após o registro bem-sucedido
+      }
     } catch (error) {
+      console.error('Erro na requisição:', error); // Para depuração
       alert(error.response.data.message);
     }
   };

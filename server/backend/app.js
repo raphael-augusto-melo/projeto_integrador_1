@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const authRoutes = require('./routes/auth');
+const authRoutes = require('./routes/auth.js');
 
 const app = express();
 
@@ -10,7 +10,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Rotas
-app.use('/auth', authRoutes);
+app.use('/register', authRoutes);
 
 // Iniciar o servidor
 const PORT = process.env.PORT || 3001;

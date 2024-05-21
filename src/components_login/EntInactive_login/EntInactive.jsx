@@ -8,10 +8,8 @@ import "./style.css";
 
 export const EntInactive = ({ className, frameClassName, divClassName }) => {
   return (
-    <div className={`ent-inactive ${className}`}>
-      <div className={`div-wrapper ${frameClassName}`}>
-        <a className={`text-wrapper ${divClassName}`} href="/TelaInicial">Entrar</a>
-      </div>
-    </div>
+    <button className={`ent-inactive ${className}`}>
+        <p className={`text-wrapper ${divClassName}`} href="/TelaInicial">Entrar</p>
+    </button>
   );
 };

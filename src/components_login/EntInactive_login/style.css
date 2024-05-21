@@ -1,9 +1,8 @@
 .ent-inactive {
   height: 58px;
   width: 164px;
-}
-
-.ent-inactive .div-wrapper {
+  border: none;
+  background-color: none;
   align-items: center;
   background-color: #f5061d;
   border-radius: 45px;
