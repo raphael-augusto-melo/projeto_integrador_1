@@ -23,8 +23,9 @@ export const Cadastro = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log("Dados do formulário:", formData); // Para depuração
     try {
-      const response = await axios.post('http://localhost:5000/auth/register', formData);
+      const response = await axios.post('http://localhost:3001/api/register', formData);
       console.log('Resposta do servidor:', response.data); // Para depuração
       alert(response.data.message);
       if (response.data.message === "Usuário registrado com sucesso") {
@@ -32,7 +33,11 @@ export const Cadastro = () => {
       }
     } catch (error) {
       console.error('Erro na requisição:', error); // Para depuração
-      alert(error.response.data.message);
+      if (error.response && error.response.data && error.response.data.message) {
+        alert(error.response.data.message);
+      } else {
+        alert("Erro ao conectar-se ao servidor");
+      }
     }
   };
 
@@ -41,43 +46,7 @@ export const Cadastro = () => {
       <div className="div">
         <div className="overlap">
           <form onSubmit={handleSubmit}>
-            <div className="text-wrapper-2">CPF *</div>
-            <div className="text-wrapper-3">E-mail *</div>
             <div className="text-wrapper-4">Nome completo *</div>
-            <div className="overlap-2">
-              <div className="text-wrapper-5">Telefone *</div>
-              <InputFieldSenha
-                className="input-field-Senha"
-                keyFieldClassName="design-component-instance-node"
-                property1="default-state"
-                text="Senha"
-                maxLength={8}
-                name="senha"
-                value={formData.senha}
-                onChange={handleChange}
-              />
-              <InputFieldTelefone
-                className="input-field-instance"
-                keyFieldClassName="design-component-instance-node"
-                property1="default-state"
-                text="Telefone"
-                maxLength={11}
-                name="telefone"
-                value={formData.telefone}
-                onChange={handleChange}
-              />
-            </div>
-            <div className="text-wrapper-6">RG *</div>
-            <div className="text-wrapper-7">Estimativa de Renda Mensal</div>
-            <div className="text-wrapper-8">Endereço *</div>
-            <div className="text-wrapper-9">Preencha as seguintes informações:</div>
-            <div className="text-cad">Senha *</div>
-            <CriaInactive
-              className="button-cria-conta"
-              divClassName="button-cria-conta-2"
-              frameClassName="cria-inactive-instance"
-              type="submit"
-            />
             <InputFieldName
               className="input-field-2"
               keyFieldClassName="design-component-instance-node"
@@ -87,25 +56,18 @@ export const Cadastro = () => {
               value={formData.name}
               onChange={handleChange}
             />
-            <InputFieldERM
-              className="input-field-3"
+            <div className="text-wrapper-5">Telefone *</div>
+            <InputFieldTelefone
+              className="input-field-instance"
               keyFieldClassName="design-component-instance-node"
               property1="default-state"
-              text="Renda"
-              name="renda"
-              value={formData.renda}
+              text="Telefone"
+              maxLength={11}
+              name="telefone"
+              value={formData.telefone}
               onChange={handleChange}
             />
-            <InputFieldEndereco
-              className="input-field-4"
-              keyFieldClassName="design-component-instance-node"
-              property1="default-state"
-              text="Endereço"
-              maxLength={50}
-              name="endereco"
-              value={formData.endereco}
-              onChange={handleChange}
-            />
+            <div className="text-wrapper-2">CPF *</div>
             <InputFieldCPF
               className="input-field-5"
               keyFieldClassName="design-component-instance-node"
@@ -116,6 +78,7 @@ export const Cadastro = () => {
               value={formData.cpf}
               onChange={handleChange}
             />
+            <div className="text-wrapper-6">RG *</div>
             <InputFieldRG
               className="input-field-6"
               keyFieldClassName="design-component-instance-node"
@@ -126,6 +89,7 @@ export const Cadastro = () => {
               value={formData.rg}
               onChange={handleChange}
             />
+            <div className="text-wrapper-3">E-mail *</div>
             <InputFieldEmail
               className="input-field-7"
               keyFieldClassName="design-component-instance-node"
@@ -134,6 +98,44 @@ export const Cadastro = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
+            />
+            <div className="text-wrapper-8">Endereço *</div>
+            <InputFieldEndereco
+              className="input-field-4"
+              keyFieldClassName="design-component-instance-node"
+              property1="default-state"
+              text="Endereço"
+              maxLength={50}
+              name="endereco"
+              value={formData.endereco}
+              onChange={handleChange}
+            />
+            <div className="text-wrapper-7">Estimativa de Renda Mensal</div>
+            <InputFieldERM
+              className="input-field-3"
+              keyFieldClassName="design-component-instance-node"
+              property1="default-state"
+              text="Renda"
+              name="renda"
+              value={formData.renda}
+              onChange={handleChange}
+            />
+            <div className="text-cad">Senha *</div>
+            <InputFieldSenha
+              className="input-field-Senha"
+              keyFieldClassName="design-component-instance-node"
+              property1="default-state"
+              text="Senha"
+              maxLength={8}
+              name="senha"
+              value={formData.senha}
+              onChange={handleChange}
+            />
+            <CriaInactive
+              className="button-cria-conta"
+              divClassName="button-cria-conta-2"
+              frameClassName="cria-inactive-instance"
+              type="submit"
             />
           </form>
         </div>
@@ -154,4 +156,5 @@ export const Cadastro = () => {
     </div>
   );
 };
+
 export default Cadastro;

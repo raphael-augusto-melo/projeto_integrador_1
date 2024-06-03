@@ -19,16 +19,17 @@ export const Login = () => {
 
   const handleLogin = async () => {
     try {
-      const response = await fetch("/api/login", {
+      const response = await fetch("http://localhost:3001/api/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({ cpf, senha }),
       });
-
+  
       const data = await response.json();
-
+      console.log(data); // Log para depuração
+  
       if (response.ok) {
         // Sucesso: redirecionar ou salvar token
         localStorage.setItem("token", data.token);
@@ -38,6 +39,7 @@ export const Login = () => {
         setError(data.message || "Erro ao fazer login");
       }
     } catch (err) {
+      console.error(err); // Log para depuração
       setError("Erro ao conectar com o servidor");
     }
   };
@@ -93,7 +95,7 @@ export const Login = () => {
           <div className="text-wrapper-5">CPF</div>
           <div className="text-wrapper-6">Acesse a sua conta</div>
           {error && <div className="error">{error}</div>}
-          <button className="text-wrapper-7" onClick={handleLogin}>Entrar</button>
+          <button className="text-wrapper-7_" onClick={handleLogin}>Entrar</button>
           <a href="/TelaEsqSenha">
             <div className="text-wrapper-7">Esqueci a senha</div>
           </a>
@@ -109,7 +111,7 @@ export const Login = () => {
             criaInactiveDivClassName="cad-inactive-instance"
             criaInactiveFrameClassName="button-cad-3"
           />
-          <EntInactive className="button-ent" divClassName="button-ent-2" frameClassName="ent-inactive-instance" />
+          {/* <EntInactive className="button-ent" divClassName="button-ent-2" frameClassName="ent-inactive-instance" /> */}
         </div>
       </div>
     </div>
