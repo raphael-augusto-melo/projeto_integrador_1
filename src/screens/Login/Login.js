@@ -19,7 +19,7 @@ export const Login = () => {
 
   const handleLogin = async () => {
     try {
-      const response = await fetch("http://localhost:3001/api/login", {
+      const response = await fetch("http://localhost:3000/api/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -33,7 +33,7 @@ export const Login = () => {
       if (response.ok) {
         // Sucesso: redirecionar ou salvar token
         localStorage.setItem("token", data.token);
-        window.location.href = "/protected";
+        window.location.href = "/TelaInicial";
       } else {
         // Erro: mostrar mensagem de erro
         setError(data.message || "Erro ao fazer login");

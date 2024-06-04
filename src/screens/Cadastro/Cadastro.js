@@ -25,7 +25,7 @@ export const Cadastro = () => {
     e.preventDefault();
     console.log("Dados do formulário:", formData); // Para depuração
     try {
-      const response = await axios.post('http://localhost:3001/api/register', formData);
+      const response = await axios.post('http://localhost:3000/api/register', formData);
       console.log('Resposta do servidor:', response.data); // Para depuração
       alert(response.data.message);
       if (response.data.message === "Usuário registrado com sucesso") {

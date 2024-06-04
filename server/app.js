@@ -1,17 +1,20 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const authRoutes = require('./routes/auth');
-const userRoutes = require('./routes/userRoutes');
+const authRoutes = require('./routes/auth.js'); // Importa as rotas de autenticação
 
 const app = express();
 
 // Middleware
 app.use(cors());
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true })); // Para lidar com requisições URL-encoded
 
 // Rotas
-app.use('/api/auth', authRoutes);
-app.use('/api/users', userRoutes);
+app.use('/api', authRoutes); // Prefira agrupar todas as rotas sob um prefixo comum, como /api
 
-module.exports = app;
+// Iniciar o servidor
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Servidor rodando na porta ${PORT}`);
+});
