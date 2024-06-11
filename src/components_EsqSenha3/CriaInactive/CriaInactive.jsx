@@ -9,7 +9,7 @@ import "./style.css";
 
 export const CriaInactive = ({ className, frameClassName, divClassName, text = "Criar conta" }) => {
   return (
-    <a href="/" className={`cria-inactive ${className}`}>
+    <a href="/" className={`cria-inactive3 ${className}`}>
       <div className={`frame ${frameClassName}`}>
         <div className={`criar-conta ${divClassName}`}>{text}</div>
       </div>

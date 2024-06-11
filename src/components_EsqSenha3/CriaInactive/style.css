@@ -1,9 +1,9 @@
-.cria-inactive {
+.cria-inactive3 {
   height: 58px;
   width: 230px;
 }
 
-.cria-inactive .frame {
+.cria-inactive3 .frame {
   align-items: center;
   background-color: #f5061d;
   border-radius: 45px;
@@ -15,7 +15,7 @@
   position: relative;
 }
 
-.cria-inactive .criar-conta {
+.cria-inactive3 .criar-conta {
   color: #ffffff;
   font-family: "Exo 2", Helvetica;
   font-size: 32px;

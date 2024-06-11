@@ -1,7 +1,16 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { CriaInactive } from "../../components_cadastro/CriaInactive_cadastro";
-import { InputFieldName, InputFieldCPF, InputFieldERM, InputFieldEmail, InputFieldEndereco, InputFieldRG, InputFieldTelefone, InputFieldSenha } from "../../components_cadastro/InputField_cadastro";
+import {
+  InputFieldName,
+  InputFieldCPF,
+  InputFieldERM,
+  InputFieldEmail,
+  InputFieldEndereco,
+  InputFieldRG,
+  InputFieldTelefone,
+  InputFieldSenha
+} from "../../components_cadastro/InputField_cadastro";
 import "../style_cadastro.css";
 
 export const Cadastro = () => {
@@ -16,13 +25,34 @@ export const Cadastro = () => {
     senha: ""
   });
 
+  const [errors, setErrors] = useState({});
+
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+    console.log(`Campo alterado: ${name}, Valor: ${value}`); // Adicione este log
+    setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
+  };
+
+  const validateForm = () => {
+    const newErrors = {};
+    console.log("Validando formulário:", formData); // Adicione este log para depuração
+    if (!formData.name) newErrors.name = "Nome é obrigatório";
+    if (!formData.cpf) newErrors.cpf = "CPF é obrigatório";
+    if (!formData.rg) newErrors.rg = "RG é obrigatório";
+    if (!formData.email) newErrors.email = "Email é obrigatório";
+    if (!formData.telefone) newErrors.telefone = "Telefone é obrigatório";
+    if (!formData.endereco) newErrors.endereco = "Endereço é obrigatório";
+    if (!formData.senha) newErrors.senha = "Senha é obrigatória";
+    return newErrors;
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    const formErrors = validateForm();
+    if (Object.keys(formErrors).length > 0) {
+      setErrors(formErrors);
+      return;
+    }
     console.log("Dados do formulário:", formData); // Para depuração
     try {
       const response = await axios.post('http://localhost:3000/api/register', formData);
@@ -56,6 +86,7 @@ export const Cadastro = () => {
               value={formData.name}
               onChange={handleChange}
             />
+            {errors.name && <p className="error">{errors.name}</p>}
             <div className="text-wrapper-5">Telefone *</div>
             <InputFieldTelefone
               className="input-field-instance"
@@ -67,6 +98,7 @@ export const Cadastro = () => {
               value={formData.telefone}
               onChange={handleChange}
             />
+            {errors.telefone && <p className="error">{errors.telefone}</p>}
             <div className="text-wrapper-2">CPF *</div>
             <InputFieldCPF
               className="input-field-5"
@@ -78,6 +110,7 @@ export const Cadastro = () => {
               value={formData.cpf}
               onChange={handleChange}
             />
+            {errors.cpf && <p className="error">{errors.cpf}</p>}
             <div className="text-wrapper-6">RG *</div>
             <InputFieldRG
               className="input-field-6"
@@ -89,6 +122,7 @@ export const Cadastro = () => {
               value={formData.rg}
               onChange={handleChange}
             />
+            {errors.rg && <p className="error">{errors.rg}</p>}
             <div className="text-wrapper-3">E-mail *</div>
             <InputFieldEmail
               className="input-field-7"
@@ -99,6 +133,7 @@ export const Cadastro = () => {
               value={formData.email}
               onChange={handleChange}
             />
+            {errors.email && <p className="error">{errors.email}</p>}
             <div className="text-wrapper-8">Endereço *</div>
             <InputFieldEndereco
               className="input-field-4"
@@ -110,6 +145,7 @@ export const Cadastro = () => {
               value={formData.endereco}
               onChange={handleChange}
             />
+            {errors.endereco && <p className="error">{errors.endereco}</p>}
             <div className="text-wrapper-7">Estimativa de Renda Mensal</div>
             <InputFieldERM
               className="input-field-3"
@@ -131,11 +167,13 @@ export const Cadastro = () => {
               value={formData.senha}
               onChange={handleChange}
             />
+            {errors.senha && <p className="error">{errors.senha}</p>}
             <CriaInactive
               className="button-cria-conta"
               divClassName="button-cria-conta-2"
               frameClassName="cria-inactive-instance"
               type="submit"
+              onClick={handleSubmit}
             />
           </form>
         </div>

@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import { Component } from "../../components_telainicial/Component";
 import { ExtIconInactive } from "../../components_telainicial/ExtIconInactive";
 import { ExtInactive } from "../../components_telainicial/ExtInactive";
@@ -9,6 +10,33 @@ import { VerFatInactive } from "../../components_telainicial/VerFatInactive";
 import "./style.css";
 
 export const TelaInicial = () => {
+  const [saldo, setSaldo] = useState(null);
+  const [error, setError] = useState("");
+
+  useEffect(() => {
+    const fetchSaldo = async () => {
+      try {
+        const token = localStorage.getItem('token');
+        if (!token) {
+          setError("Token não encontrado. Faça login novamente.");
+          return;
+        }
+
+        const response = await axios.get('http://localhost:3000/api/saldo', {
+          headers: {
+            'Authorization': token,
+          },
+        });
+        setSaldo(response.data.saldo);
+      } catch (error) {
+        console.error('Erro ao obter saldo:', error);
+        setError("Erro ao obter saldo");
+      }
+    };
+
+    fetchSaldo();
+  }, []);
+
   return (
     <div className="tela-inicial">
       <div className="div-2">
@@ -17,7 +45,7 @@ export const TelaInicial = () => {
             <span className="span">R$</span>
             <span className="text-wrapper-9">
               {" "}
-              {"{"}saldo_disp{"}"}
+              {saldo !== null ? saldo : error || "Carregando..."}
             </span>
           </p>
           <div className="overlap-2">
@@ -25,7 +53,7 @@ export const TelaInicial = () => {
               <span className="span">R$</span>
               <span className="text-wrapper-9">
                 {" "}
-                {"{"}fatura{"}"}
+                {"{fatura}"}
               </span>
             </p>
             <div className="text-wrapper-10">Fatura atual</div>
@@ -35,7 +63,7 @@ export const TelaInicial = () => {
               <span className="span">R$</span>
               <span className="text-wrapper-9">
                 {" "}
-                {"{"}lim_disp{"}"}
+                {"{lim_disp}"}
               </span>
             </p>
             <div className="text-wrapper-11">Limite disponível</div>
@@ -59,22 +87,22 @@ export const TelaInicial = () => {
           <img className="debit-card" alt="Debit card" src="https://c.animaapp.com/v0SxTu3L/img/debit-card@2x.png" />
           <div className="text-wrapper-13">Acesso Rápido</div>
           <a href="/TelaExtrato"> {/*botao ver ext*/}
-          <ExtInactive className="button-ext" />
+            <ExtInactive className="button-ext" />
           </a>
           <a href="/TelaPix"> {/*Icone pix*/}
-          <PixIconInactive className="button-icon-pix" image="https://c.animaapp.com/v0SxTu3L/img/image-9-1@2x.png" />
+            <PixIconInactive className="button-icon-pix" image="https://c.animaapp.com/v0SxTu3L/img/image-9-1@2x.png" />
           </a>
           <a href="/TelaExtrato"> {/*Icone extrato*/}
-          <ExtIconInactive className="button-icon-ext" />
+            <ExtIconInactive className="button-icon-ext" />
           </a>
           <a href="/TelaFatura"> {/*botao ver Fatura*/}
-          <VerFatInactive className="button-ver-fat" />
+            <VerFatInactive className="button-ver-fat" />
           </a>
           <a href="/TelaPagamentos"> {/*Icone Pagamento*/}
-          <IconPagInactive className="button-icon-pag" />
+            <IconPagInactive className="button-icon-pag" />
           </a>
           <a href="/TelaEmprstimo1"> {/*Icone emprestimo*/}
-          <Group className="group-26" />
+            <Group className="group-26" />
           </a>
         </div>
         <div className="overlap-4">

@@ -1,7 +1,8 @@
+// server/app.js
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const authRoutes = require('./routes/auth.js'); // Importa as rotas de autenticação
+const authRoutes = require('./routes/rotas.js'); // Importa as rotas de autenticação
 
 const app = express();
 

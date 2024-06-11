@@ -9,7 +9,7 @@ import "./style_CriaInac_emp1.css";
 
 export const CriaInactive = ({ className, frameClassName, divClassName, text = "Criar conta" }) => {
   return (
-    <a href="/TelaEmprstimo2" className={`cria-inactive ${className}`}>
+    <a href="/TelaEmprstimo2" className={`cria-inactive-emp1 ${className}`}>
       <div className={`frame ${frameClassName}`}>
         <div className={`criar-conta ${divClassName}`}>{text}</div>
       </div>
