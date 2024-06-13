@@ -1,18 +1,29 @@
-/*
-We're constantly improving the code you see. 
-Please share your feedback here: https://form.asana.com/?k=uvp-HPgd3_hyoXRBw1IcNg&d=1152665201300829
-*/
-
 import React from "react";
+import PropTypes from "prop-types";
 import "./style_CriaInactive_cad.css";
 
-export const CriaInactive = ({ className, frameClassName, divClassName, onClick }) => {
+export const CriaInactive = ({ className, frameClassName, divClassName, text = "Criar conta", onClick }) => {
   return (
     <button className={`cria-inactive ${className}`} onClick={onClick}>
       <div className={`frame ${frameClassName}`}>
-        <div className={`text-wrapper ${divClassName}`}>Criar conta</div>
+        <div className={`criar-conta ${divClassName}`}>{text}</div>
       </div>
     </button>
   );
 };
 
+CriaInactive.propTypes = {
+  className: PropTypes.string,
+  frameClassName: PropTypes.string,
+  divClassName: PropTypes.string,
+  text: PropTypes.string,
+  onClick: PropTypes.func,
+};
+
+CriaInactive.defaultProps = {
+  className: "",
+  frameClassName: "",
+  divClassName: "",
+  text: "Criar conta",
+  onClick: () => {},
+};

@@ -29,13 +29,11 @@ export const Cadastro = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    console.log(`Campo alterado: ${name}, Valor: ${value}`); // Adicione este log
     setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
   };
 
   const validateForm = () => {
     const newErrors = {};
-    console.log("Validando formulário:", formData); // Adicione este log para depuração
     if (!formData.name) newErrors.name = "Nome é obrigatório";
     if (!formData.cpf) newErrors.cpf = "CPF é obrigatório";
     if (!formData.rg) newErrors.rg = "RG é obrigatório";
@@ -53,16 +51,13 @@ export const Cadastro = () => {
       setErrors(formErrors);
       return;
     }
-    console.log("Dados do formulário:", formData); // Para depuração
     try {
       const response = await axios.post('http://localhost:3000/api/register', formData);
-      console.log('Resposta do servidor:', response.data); // Para depuração
       alert(response.data.message);
       if (response.data.message === "Usuário registrado com sucesso") {
         window.location.href = "/"; // Redirecionar para a página de login após o registro bem-sucedido
       }
     } catch (error) {
-      console.error('Erro na requisição:', error); // Para depuração
       if (error.response && error.response.data && error.response.data.message) {
         alert(error.response.data.message);
       } else {
@@ -146,7 +141,7 @@ export const Cadastro = () => {
               onChange={handleChange}
             />
             {errors.endereco && <p className="error">{errors.endereco}</p>}
-            <div className="text-wrapper-7">Estimativa de Renda Mensal</div>
+            <div className="text-cad">Estimativa de Renda Mensal</div>
             <InputFieldERM
               className="input-field-3"
               keyFieldClassName="design-component-instance-node"
@@ -172,7 +167,7 @@ export const Cadastro = () => {
               className="button-cria-conta"
               divClassName="button-cria-conta-2"
               frameClassName="cria-inactive-instance"
-              type="submit"
+              text="Criar conta"
               onClick={handleSubmit}
             />
           </form>
