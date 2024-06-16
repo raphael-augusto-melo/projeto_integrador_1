@@ -141,7 +141,7 @@ export const Cadastro = () => {
               onChange={handleChange}
             />
             {errors.endereco && <p className="error">{errors.endereco}</p>}
-            <div className="text-cad">Estimativa de Renda Mensal</div>
+            <div className="text-erm">Estimativa de Renda Mensal</div>
             <InputFieldERM
               className="input-field-3"
               keyFieldClassName="design-component-instance-node"

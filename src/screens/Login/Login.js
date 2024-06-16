@@ -96,6 +96,7 @@ export const Login = () => {
           <div className="text-wrapper-6">Acesse a sua conta</div>
           {error && <div className="error">{error}</div>}
           <button className="text-wrapper-7_" onClick={handleLogin}>Entrar</button>
+          
           <a href="/TelaEsqSenha">
             <div className="text-wrapper-7">Esqueci a senha</div>
           </a>

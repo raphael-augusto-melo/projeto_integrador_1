@@ -1,10 +1,20 @@
-import React from "react";
+// TelaPix2.js
+import React, { useEffect, useState } from "react";
 import { ButtonEntEnt } from "../../components_pix2/ButtonEntEnt";
 import { Group } from "../../components_pix2/Group";
 import { InputFieldValor, InputFieldData } from "../../components_pix2/InputField_pix2";
 import "./style_telapix2.css";
 
 export const TelaPix2 = () => {
+  const [beneficiario, setBeneficiario] = useState(null);
+
+  useEffect(() => {
+    const beneficiarioData = localStorage.getItem('beneficiario');
+    if (beneficiarioData) {
+      setBeneficiario(JSON.parse(beneficiarioData));
+    }
+  }, []);
+
   return (
     <div className="tela-pix2">
       <div className="overlap-wrapper">
@@ -18,27 +28,31 @@ export const TelaPix2 = () => {
           <p className="p">Informe o valor da transferência</p>
           <div className="text-wrapper-3">Área Pix</div>
           <a href="/TelaPix">
-          <Group className="group-29" property1="default" />
+            <Group className="group-29" property1="default" />
           </a>
           <img className="contacts" alt="Contacts" src="https://c.animaapp.com/2ViQC4uw/img/contacts@2x.png" />
-          <div className="text-wrapper-4">Banco do beneficiário</div>
-          <div className="text-wrapper-5">Nome do Beneficiário</div>
+          <div className="text-wrapper-4">CEUBank</div>
+          <div className="text-wrapper-5">
+            {beneficiario ? beneficiario.name : "Nome: "}
+          </div>
           <div className="chave-chave-do">
-            Chave: {"{"}chave_do_beneficiario{"}"}
+            {beneficiario ? `Chave: ${beneficiario.chave}` : "Chave: "}
           </div>
           <InputFieldValor 
-          className="rectangle-4" 
-          text={"R$0,00"}/>
+            className="rectangle-4" 
+            text={"R$0,00"}
+          />
           <InputFieldData
-           className="rectangle-5"
-           text={"DD/MM/AAAA"}
-           maxLength={8} />
+            className="rectangle-5"
+            text={"DD/MM/AAAA"}
+            maxLength={8}
+          />
           <div className="text-wrapper-6">Digite o valor</div>
           <div className="text-wrapper-7">Pagar na data</div>
           <div className="rectangle-6" />
           <div className="text-wrapper-8">Saldo Disponível</div>
           <div className="r-saldo-disp">
-            R${"{"}saldo_disp{"}"}
+            R${"{saldo_disp}"}
           </div>
           <img className="line" alt="Line" src="https://c.animaapp.com/2ViQC4uw/img/line-26.png" />
           <ButtonEntEnt className="button-ent-ent-inactive" />
@@ -47,4 +61,5 @@ export const TelaPix2 = () => {
     </div>
   );
 };
+
 export default TelaPix2;

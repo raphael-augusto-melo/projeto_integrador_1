@@ -1,3 +1,5 @@
+
+
 .cadastro {
     background-color: #ffffff;
     display: flex;
@@ -63,7 +65,7 @@
     position: absolute;
     top: 119px;
     white-space: nowrap;
-    width: 201px;
+    width: 100%;
   }
   
   .cadastro .overlap-2 {
@@ -166,15 +168,38 @@
     letter-spacing: 0;
     line-height: normal;
     position: absolute;
-    top: 470px;
+    top: 469px;
     width: 126px;
   }
   
+  .cadastro .text-erm {
+    color: #000;
+    letter-spacing: 0;
+    white-space: nowrap;
+    width: 100%;
+    font-family: "Exo 2", Helvetica;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: normal;
+    position: absolute;
+    top: 354px;
+    left: 639px;
+}
+
   .cadastro .button-cria-conta {
+    background-color: #f5061d;
+    border-radius: 45px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 58px;
+    padding: 2px 36px;
+    display: inline-flex;
+    position: relative;
     left: 917px;
     position: absolute;
     top: 644px;
-    
+
   }
   
   .cadastro .cria-inactive-instance {

@@ -57,7 +57,9 @@ router.post('/login', async (req, res) => {
 
 // Middleware de autenticação
 const authenticateToken = (req, res, next) => {
-  const token = req.headers['authorization'];
+  const authHeader = req.headers['authorization'];
+  const token = authHeader && authHeader.split(' ')[1];
+
   if (!token) return res.status(401).json({ message: 'Acesso negado. Token não fornecido.' });
 
   jwt.verify(token, SECRET_KEY, (err, user) => {
@@ -66,6 +68,7 @@ const authenticateToken = (req, res, next) => {
     next();
   });
 };
+
 
 // Endpoint para obter saldo
 router.get('/saldo', authenticateToken, async (req, res) => {
@@ -77,7 +80,90 @@ router.get('/saldo', authenticateToken, async (req, res) => {
     const { saldo } = results[0];
     res.json({ saldo });
   } catch (err) {
-    res.status(500).json({ message: 'Erro ao obter saldo' });
+    res.status(500).json({ message: 'Erro ao obter saldo' });6
+  }
+});
+
+// Endpoint para buscar usuário por CPF, e-mail ou telefone
+router.post('/buscarUsuario', authenticateToken, async (req, res) => {
+  const { chave } = req.body;
+
+  if (!chave) {
+    return res.status(400).json({ message: 'Chave é obrigatória' });
+  }
+
+  try {
+    const [results] = await connection.promise().query(
+      'SELECT id, name, cpf, email, telefone, saldo FROM tb_usuarios WHERE cpf = ? OR email = ? OR telefone = ?',
+      [chave, chave, chave]
+    );
+
+    if (results.length === 0) {
+      return res.status(404).json({ message: 'Usuário não encontrado' });
+    }
+
+    res.json({ usuario: results[0] });
+  } catch (err) {
+    res.status(500).json({ message: 'Erro ao buscar usuário', error: err });
+  }
+});
+
+
+// Endpoint para transferir dinheiro
+router.post('/transfer', authenticateToken, async (req, res) => {
+  const { chave, valor } = req.body;
+
+  if (!chave || !valor) {
+    return res.status(400).json({ message: 'Chave do destinatário e valor da transferência são obrigatórios' });
+  }
+
+  try {
+    // Verificar se o usuário tem saldo suficiente
+    const [remetenteResults] = await connection.promise().query('SELECT saldo FROM tb_usuarios WHERE id = ?', [req.user.id]);
+    if (remetenteResults.length === 0) {
+      return res.status(404).json({ message: 'Usuário remetente não encontrado' });
+    }
+
+    const remetenteSaldo = remetenteResults[0].saldo;
+    if (remetenteSaldo < valor) {
+      return res.status(400).json({ message: 'Saldo insuficiente' });
+    }
+
+    // Verificar se o destinatário existe
+    const [destinatarioResults] = await connection.promise().query(
+      'SELECT id, saldo FROM tb_usuarios WHERE cpf = ? OR email = ? OR telefone = ?',
+      [chave, chave, chave]
+    );
+    if (destinatarioResults.length === 0) {
+      return res.status(404).json({ message: 'Usuário destinatário não encontrado' });
+    }
+
+    const destinatario = destinatarioResults[0];
+
+    // Iniciar uma transação
+    const conn = await connection.promise().getConnection();
+    await conn.beginTransaction();
+
+    try {
+      // Atualizar saldo do remetente
+      await conn.query('UPDATE tb_usuarios SET saldo = saldo - ? WHERE id = ?', [valor, req.user.id]);
+
+      // Atualizar saldo do destinatário
+      await conn.query('UPDATE tb_usuarios SET saldo = saldo + ? WHERE id = ?', [valor, destinatario.id]);
+
+      // Commitar a transação
+      await conn.commit();
+
+      res.status(200).json({ message: 'Transferência realizada com sucesso' });
+    } catch (err) {
+      // Rollback em caso de erro
+      await conn.rollback();
+      res.status(500).json({ message: 'Erro ao realizar transferência', error: err });
+    } finally {
+      conn.release();
+    }
+  } catch (err) {
+    res.status(500).json({ message: 'Erro ao conectar com o servidor', error: err });
   }
 });
 
