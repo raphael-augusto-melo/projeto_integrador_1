@@ -1,5 +1,5 @@
-// TelaPix2.js
 import React, { useEffect, useState } from "react";
+import axios from "axios";
 import { ButtonEntEnt } from "../../components_pix2/ButtonEntEnt";
 import { Group } from "../../components_pix2/Group";
 import { InputFieldValor, InputFieldData } from "../../components_pix2/InputField_pix2";
@@ -7,13 +7,56 @@ import "./style_telapix2.css";
 
 export const TelaPix2 = () => {
   const [beneficiario, setBeneficiario] = useState(null);
+  const [saldo, setSaldo] = useState(null);
+  const [valor, setValor] = useState("");
+  const [data, setData] = useState("");
+  const [error, setError] = useState("");
 
   useEffect(() => {
+    const fetchSaldo = async () => {
+      try {
+        const token = localStorage.getItem('token');
+        if (!token) {
+          setError("Token não encontrado. Faça login novamente.");
+          return;
+        }
+
+        const response = await axios.get('http://localhost:3000/api/saldo', {
+          headers: {
+            'Authorization': `Bearer ${token}`,
+          },
+        });
+        setSaldo(response.data.saldo);
+      } catch (error) {
+        console.error('Erro ao obter saldo:', error);
+        setError("Erro ao obter saldo");
+      }
+    };
+
+    fetchSaldo();
+
     const beneficiarioData = localStorage.getItem('beneficiario');
     if (beneficiarioData) {
       setBeneficiario(JSON.parse(beneficiarioData));
     }
   }, []);
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    if (!valor || !data || !beneficiario) {
+      setError("Por favor, preencha todos os campos.");
+      alert("Por favor, preencha todos os campos.");
+      return;
+    }
+
+    // Salvar valor da transferência e data no localStorage
+    localStorage.setItem('transferValue', valor);
+    localStorage.setItem('transferDate', data);
+
+    // Redirecionar para a próxima tela
+    window.location.href = "/TelaPix3";
+  };
 
   return (
     <div className="tela-pix2">
@@ -38,24 +81,30 @@ export const TelaPix2 = () => {
           <div className="chave-chave-do">
             {beneficiario ? `Chave: ${beneficiario.chave}` : "Chave: "}
           </div>
-          <InputFieldValor 
-            className="rectangle-4" 
-            text={"R$0,00"}
-          />
-          <InputFieldData
-            className="rectangle-5"
-            text={"DD/MM/AAAA"}
-            maxLength={8}
-          />
-          <div className="text-wrapper-6">Digite o valor</div>
-          <div className="text-wrapper-7">Pagar na data</div>
-          <div className="rectangle-6" />
-          <div className="text-wrapper-8">Saldo Disponível</div>
-          <div className="r-saldo-disp">
-            R${"{saldo_disp}"}
-          </div>
-          <img className="line" alt="Line" src="https://c.animaapp.com/2ViQC4uw/img/line-26.png" />
-          <ButtonEntEnt className="button-ent-ent-inactive" />
+          <form onSubmit={handleSubmit}>
+            <InputFieldValor 
+              className="rectangle-4" 
+              text={"R$0,00"}
+              onChange={setValor}
+            />
+            <InputFieldData
+              className="rectangle-5"
+              text={"DD/MM/AAAA"}
+              onChange={setData}
+            />
+            <div className="text-wrapper-6">Digite o valor</div>
+            <div className="text-wrapper-7">Pagar na data</div>
+            <div className="rectangle-6" />
+            <div className="text-wrapper-8">Saldo Disponível</div>
+            <p className="r-saldo-disp">
+              <span className="span">R$
+                {" "}
+                {saldo !== null ? saldo : error || "Carregando..."}
+              </span>
+            </p>
+            <img className="line" alt="Line" src="https://c.animaapp.com/2ViQC4uw/img/line-26.png" />
+            <ButtonEntEnt className="button-ent-ent-inactive" text="Avançar" />
+          </form>
         </div>
       </div>
     </div>

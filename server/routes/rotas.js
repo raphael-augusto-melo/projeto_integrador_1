@@ -1,4 +1,3 @@
-// server/routes/rotas.js
 const express = require('express');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
@@ -60,27 +59,36 @@ const authenticateToken = (req, res, next) => {
   const authHeader = req.headers['authorization'];
   const token = authHeader && authHeader.split(' ')[1];
 
-  if (!token) return res.status(401).json({ message: 'Acesso negado. Token não fornecido.' });
+  if (!token) {
+    console.log('Token não fornecido');
+    return res.status(401).json({ message: 'Acesso negado. Token não fornecido.' });
+  }
 
   jwt.verify(token, SECRET_KEY, (err, user) => {
-    if (err) return res.status(403).json({ message: 'Token inválido.' });
+    if (err) {
+      console.log('Token inválido', err);
+      return res.status(403).json({ message: 'Token inválido.' });
+    }
     req.user = user;
     next();
   });
 };
 
-
 // Endpoint para obter saldo
 router.get('/saldo', authenticateToken, async (req, res) => {
   try {
+    console.log('Usuário autenticado:', req.user);
     const [results] = await connection.promise().query('SELECT saldo FROM tb_usuarios WHERE id = ?', [req.user.id]);
     if (results.length === 0) {
+      console.log('Usuário não encontrado');
       return res.status(404).json({ message: 'Usuário não encontrado' });
     }
     const { saldo } = results[0];
+    console.log('Saldo encontrado:', saldo);
     res.json({ saldo });
   } catch (err) {
-    res.status(500).json({ message: 'Erro ao obter saldo' });6
+    console.log('Erro ao obter saldo', err);
+    res.status(500).json({ message: 'Erro ao obter saldo' });
   }
 });
 
@@ -108,13 +116,12 @@ router.post('/buscarUsuario', authenticateToken, async (req, res) => {
   }
 });
 
-
 // Endpoint para transferir dinheiro
 router.post('/transfer', authenticateToken, async (req, res) => {
-  const { chave, valor } = req.body;
+  const { chave, valor, data } = req.body;
 
-  if (!chave || !valor) {
-    return res.status(400).json({ message: 'Chave do destinatário e valor da transferência são obrigatórios' });
+  if (!chave || !valor || !data) {
+    return res.status(400).json({ message: 'Chave do destinatário, valor da transferência e data são obrigatórios' });
   }
 
   try {
@@ -140,29 +147,23 @@ router.post('/transfer', authenticateToken, async (req, res) => {
 
     const destinatario = destinatarioResults[0];
 
-    // Iniciar uma transação
-    const conn = await connection.promise().getConnection();
-    await conn.beginTransaction();
+    // Inserir a transferência com status PENDING se a data for futura
+    const status = new Date(data) > new Date() ? 'PENDING' : 'COMPLETED';
 
-    try {
-      // Atualizar saldo do remetente
-      await conn.query('UPDATE tb_usuarios SET saldo = saldo - ? WHERE id = ?', [valor, req.user.id]);
+    //await connection.promise().query(
+      //'INSERT INTO tb_transferencias (remetente_id, destinatario_id, valor, data, status) VALUES (?, ?, ?, ?, ?)',
+     // [req.user.id, destinatario.id, valor, data, status]
+   // );
 
-      // Atualizar saldo do destinatário
-      await conn.query('UPDATE tb_usuarios SET saldo = saldo + ? WHERE id = ?', [valor, destinatario.id]);
-
-      // Commitar a transação
-      await conn.commit();
-
-      res.status(200).json({ message: 'Transferência realizada com sucesso' });
-    } catch (err) {
-      // Rollback em caso de erro
-      await conn.rollback();
-      res.status(500).json({ message: 'Erro ao realizar transferência', error: err });
-    } finally {
-      conn.release();
+    if (status === 'COMPLETED') {
+      // Atualizar saldo do remetente e do destinatário se a transferência for completada imediatamente
+      await connection.promise().query('UPDATE tb_usuarios SET saldo = saldo - ? WHERE id = ?', [valor, req.user.id]);
+      await connection.promise().query('UPDATE tb_usuarios SET saldo = saldo + ? WHERE id = ?', [valor, destinatario.id]);
     }
+
+    res.status(200).json({ message: `Transferência ${status === 'PENDING' ? 'agendada' : 'realizada'} com sucesso` });
   } catch (err) {
+    console.error('Erro ao conectar com o servidor', err);
     res.status(500).json({ message: 'Erro ao conectar com o servidor', error: err });
   }
 });

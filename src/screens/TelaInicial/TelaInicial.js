@@ -21,22 +21,24 @@ export const TelaInicial = () => {
           setError("Token não encontrado. Faça login novamente.");
           return;
         }
-
+  
+        console.log('Token obtido:', token);
+  
         const response = await axios.get('http://localhost:3000/api/saldo', {
           headers: {
-            'Authorization': token,
+            'Authorization': `Bearer ${token}`,
           },
         });
         setSaldo(response.data.saldo);
       } catch (error) {
-        console.error('Erro ao obter saldo:', error);
+        console.error('Erro ao obter saldo:', error.response ? error.response.data : error.message);
         setError("Erro ao obter saldo");
       }
     };
-
+  
     fetchSaldo();
   }, []);
-
+  
   return (
     <div className="tela-inicial">
       <div className="div-2">
