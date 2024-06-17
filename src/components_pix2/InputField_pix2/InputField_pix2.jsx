@@ -1,6 +1,5 @@
 import PropTypes from "prop-types";
-import React, { useReducer } from "react";
-import CurrencyInput from "react-currency-input-field";
+import React, { useReducer, useEffect } from "react";
 import InputMask from "react-input-mask";
 import "./style_Input_pix2.css";
 
@@ -79,28 +78,38 @@ InputFieldData.propTypes = {
   onChange: PropTypes.func,
 };
 
+
 export const InputFieldValor = ({ property1 = "default-state", className, text, onChange }) => {
   const [state, dispatch] = useReducer(reducer, {
     property1,
     value: "",
   });
 
-  const handleChange = (value) => {
-    dispatch({ type: "change", value });
+  useEffect(() => {
+    // Ensure onChange is called with the current state value
     if (onChange) {
-      onChange(value);
+      onChange(state.value);
     }
+  }, [state.value, onChange]);
+
+  const formatCurrency = (value) => {
+    const onlyNumbers = value.replace(/\D/g, "");
+    const numberValue = parseFloat(onlyNumbers) / 100;
+    return numberValue.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+  };
+
+  const handleChange = (e) => {
+    const { value } = e.target;
+    const formattedValue = formatCurrency(value);
+    dispatch({ type: "change", value: formattedValue });
   };
 
   return (
     <div className={`input-field_pix2 ${state.property1} ${className}`}>
-      <CurrencyInput
+      <input
+        type="text"
         value={state.value}
-        onValueChange={handleChange}
-        decimalSeparator=","
-        groupSeparator="."
-        prefix="R$ "
-        decimalsLimit={2}
+        onChange={handleChange}
         className={`element ${state.property1 === "active-state" ? "active" : ""}`}
         placeholder={state.property1 === "default-state" ? text : ""}
       />
@@ -114,8 +123,6 @@ InputFieldValor.propTypes = {
   text: PropTypes.string,
   onChange: PropTypes.func,
 };
-
-// Repita para os outros tipos de campos (Nome completo, Telefone, RG, Estimativa de Renda Mensal, Endereço)...
 
 export default  InputFieldData; InputFieldValor;
 

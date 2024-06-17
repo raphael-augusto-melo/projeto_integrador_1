@@ -50,8 +50,16 @@ export const TelaPix2 = () => {
       return;
     }
 
+    // Verificar se o valor não está nulo antes de converter para número
+    const valorNum = parseFloat(valor.replace(/[^\d,]/g, "").replace(",", "."));
+    if (isNaN(valorNum) || valorNum <= 0) {
+      setError("Valor inválido.");
+      alert("Valor inválido.");
+      return;
+    }
+
     // Salvar valor da transferência e data no localStorage
-    localStorage.setItem('transferValue', valor);
+    localStorage.setItem('transferValue', valorNum);
     localStorage.setItem('transferDate', data);
 
     // Redirecionar para a próxima tela

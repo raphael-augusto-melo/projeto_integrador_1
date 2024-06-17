@@ -103,7 +103,7 @@ export const TelaInicial = () => {
           <a href="/TelaPagamentos"> {/*Icone Pagamento*/}
             <IconPagInactive className="button-icon-pag" />
           </a>
-          <a href="/TelaEmprstimo1"> {/*Icone emprestimo*/}
+          <a href="/TelaEmprstimo2"> {/*Icone emprestimo*/}
             <Group className="group-26" />
           </a>
         </div>

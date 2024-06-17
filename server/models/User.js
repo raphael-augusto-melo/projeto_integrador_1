@@ -9,9 +9,9 @@ const User = sequelize.define('tb_usuarios', {
   email: { type: DataTypes.STRING, allowNull: false, unique: true },
   telefone: { type: DataTypes.STRING, allowNull: false },
   endereco: { type: DataTypes.STRING, allowNull: false },
-  renda: { type: DataTypes.FLOAT, allowNull: true },
+  renda: { type: DataTypes.DOUBLE, allowNull: true },
   senha: { type: DataTypes.STRING, allowNull: false },
-  saldo: { type: DataTypes.FLOAT, allowNull: false, defaultValue: 0 }
+  saldo: { type: DataTypes.DOUBLE, allowNull: false, defaultValue: 0 }
 }, {
   timestamps: true,
 });

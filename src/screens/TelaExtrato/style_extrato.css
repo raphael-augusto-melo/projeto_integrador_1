@@ -183,6 +183,10 @@
   position: absolute;
   top: 443px;
   width: 1073px;
+  padding: 5px;
+}
+.tela-extrato .overlap-5 .frame-2 {
+  padding: 20px;
 }
 
 .tela-extrato .line-2 {
@@ -223,13 +227,14 @@
   color: #000000;
   font-family: "Exo 2", Helvetica;
   font-size: 20px;
-  font-weight: 400;
   left: 56px;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
   top: 7px;
   white-space: nowrap;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .tela-extrato .calendar {
@@ -319,6 +324,9 @@
   line-height: normal;
   position: absolute;
   top: 163px;
+  margin: 0;
+  padding: 5px;
+  flex: 1;
 }
 
 .tela-extrato .line-4 {
@@ -463,4 +471,37 @@
   position: absolute;
   top: 337px;
   width: 22px;
+}
+
+.tela-extrato .date-group {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.transfer-detail {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.transfer-detail p,
+.transfer-detail .text-wrapper-8,
+.transfer-detail .text-wrapper-9 {
+  margin: 5px 0; /* Espaçamento vertical entre as linhas de texto */
+}
+.transfer-container {
+  margin-bottom: 15px; /* Espaço entre as transferências */
+  border: 1px solid #ccc; /* Borda para separar cada transferência */
+  padding: 10px; /* Espaço interno */
+  display: flex;
+  justify-content: space-between;
+}
+
+.valor-negativo {
+  color: red;
+}
+
+.valor-positivo {
+  color: green;
 }

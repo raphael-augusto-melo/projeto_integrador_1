@@ -28,6 +28,11 @@ export const TelaPix3 = () => {
   const handleConfirmarClick = async () => {
     if (beneficiario && valor && data) {
       try {
+        console.log('Enviando dados:', {
+          chave: beneficiario.chave,
+          valor: parseFloat(valor),
+          data: data
+        });
         const response = await fetch('http://localhost:3000/api/transfer', {
           method: 'POST',
           headers: {
@@ -42,17 +47,17 @@ export const TelaPix3 = () => {
         });
   
         const result = await response.json();
-  
-        console.log('Response:', response); // Adicione este log
-        console.log('Result:', result); // Adicione este log
+        console.log('Response:', response);
+        console.log('Result:', result);
   
         if (response.ok) {
           alert('Transferência realizada com sucesso');
+          window.location.href = "/TelaInicial";
         } else {
           alert(result.message || 'Não foi possível realizar a transferência');
         }
       } catch (error) {
-        console.error('Erro:', error); // Adicione este log
+        console.error('Erro:', error);
         alert('Não foi possível realizar a transferência');
       }
     } else {
@@ -60,7 +65,7 @@ export const TelaPix3 = () => {
     }
   };
   
-
+  
   return (
     <div className="tela-pix3">
       <div className="overlap-wrapper">

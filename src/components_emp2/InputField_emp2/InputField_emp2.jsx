@@ -1,45 +1,27 @@
 import PropTypes from "prop-types";
-import React, { useReducer } from "react";
+import React from "react";
 import "./style_Input_emp2.css";
 
-function reducer(state, action) {
-  switch (action.type) {
-    case "click":
-      return {
-        ...state,
-        property1: "active-state",
-      };
-    case "change":
-      return {
-        ...state,
-        value: action.value,
-      };
-    default:
-      return state;
-  }
-}
-
-
-export const InputFieldValor = ({ property1 = "default-state", className, keyFieldClassName, text }) => {
-  const [state, dispatch] = useReducer(reducer, {
-    property1,
-    value: "",
-  });
+export const InputFieldValor = ({ property1 = "default-state", className, text, value, onChange }) => {
+  const formatCurrency = (value) => {
+    const onlyNumbers = value.replace(/\D/g, "");
+    const numberValue = parseFloat(onlyNumbers) / 100;
+    return numberValue.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+  };
 
   const handleChange = (e) => {
     const { value } = e.target;
-    const onlyNumbers = value.replace(/\D/g, ""); // Remove todos os caracteres que não são números
-    dispatch({ type: "change", value: onlyNumbers });
+    onChange(formatCurrency(value));
   };
 
   return (
-    <div className={`input-field_emp2 ${state.property1} ${className}`}>
+    <div className={`input-field_emp2 ${property1} ${className}`}>
       <input
         type="text"
-        value={state.value}
+        value={value}
         onChange={handleChange}
-        className={`element ${state.property1 === "active-state" ? "active" : ""}`}
-        placeholder={state.property1 === "default-state" ? text : ""}
+        className={`element ${property1 === "active-state" ? "active" : ""}`}
+        placeholder={property1 === "default-state" ? text : ""}
       />
     </div>
   );
@@ -48,11 +30,9 @@ export const InputFieldValor = ({ property1 = "default-state", className, keyFie
 InputFieldValor.propTypes = {
   property1: PropTypes.string,
   className: PropTypes.string,
-  keyFieldClassName: PropTypes.string,
   text: PropTypes.string,
+  value: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
 };
 
-// Repita para os outros tipos de campos (Nome completo, Telefone, RG, Estimativa de Renda Mensal, Endereço)...
-
 export default InputFieldValor;
-
