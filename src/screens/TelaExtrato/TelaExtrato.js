@@ -15,17 +15,21 @@ export const TelaExtrato = () => {
             'Authorization': `Bearer ${localStorage.getItem('token')}`
           }
         });
-        const result = await response.json();
-        if (response.ok) {
-          setTransfers(result.transferencias);
-          const saldoNumerico = parseFloat(result.saldo) || 0; // Converter saldo para número ou usar 0 se não for possível converter
-          setSaldo(saldoNumerico);
-        } else {
-          alert('Erro ao buscar transferências');
+
+        if (!response.ok) {
+          const errorDetails = await response.text();
+          console.error('Erro ao buscar transferências:', errorDetails);
+          alert(`Erro ao buscar transferências: ${errorDetails}`);
+          return;
         }
+
+        const result = await response.json();
+        setTransfers(result.transferencias);
+        const saldoNumerico = parseFloat(result.saldo) || 0; // Converter saldo para número ou usar 0 se não for possível converter
+        setSaldo(saldoNumerico);
       } catch (error) {
         console.error('Erro:', error);
-        alert('Erro ao conectar com o servidor');
+        alert(`Erro ao conectar com o servidor: ${error.message}`);
       }
     };
 
@@ -81,8 +85,12 @@ export const TelaExtrato = () => {
                 {transfers.map((transfer, idx) => (
                   <div key={idx} className="transfer-container">
                     <div className="transfer-detail">
-                      <p>{transfer.tipo === 'envio' ? `Pix enviado para ${transfer.destinatario_nome}` : `Pix recebido de ${transfer.remetente_nome}`}</p>
-                      <p className={transfer.tipo === 'envio' ? 'valor-negativo' : 'valor-positivo'}>
+                      <p>
+                        {transfer.remetente_id === parseInt(localStorage.getItem('user_id'), 10) 
+                          ? `Pix enviado para ${transfer.destinatario_nome || 'destinatário desconhecido'}` 
+                          : `Pix recebido de ${transfer.remetente_nome || 'remetente desconhecido'}`}
+                      </p>
+                      <p className={transfer.remetente_id === parseInt(localStorage.getItem('user_id'), 10) ? 'valor-negativo' : 'valor-positivo'}>
                         R${Number(transfer.valor).toFixed(2)}
                       </p>
                     </div>

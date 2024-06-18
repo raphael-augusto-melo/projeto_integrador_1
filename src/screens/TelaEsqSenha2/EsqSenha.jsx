@@ -1,4 +1,4 @@
-import React from "react";
+/*import React from "react";
 import { CriaInactive } from "../../components_EsqSenha2/CriaInactive";
 import { Group } from "../../components_EsqSenha2/Group";
 import { InputFieldCod } from "../../components_EsqSenha2/InputField";
@@ -43,4 +43,4 @@ export const TelaEsqSenha2 = () => {
   );
 };
 
-export default TelaEsqSenha2;
+export default TelaEsqSenha2;*/

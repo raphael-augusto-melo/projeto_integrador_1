@@ -1,15 +1,16 @@
 import PropTypes from "prop-types";
 import React from "react";
-import "./style_inp_EsqSenha.css";
+import "./style_inp_EsqSenha3.css";
 
-export const InputFieldEmail = ({ property1 = "default-state", className, keyFieldClassName, text, value, name, onChange }) => {
+export const InputFieldEsqSenha2 = ({ property1 = "default-state", className, keyFieldClassName, text, value, name, maxLength, onChange }) => {
   return (
-    <div className={`input-field_EsqSenha ${property1} ${className}`}>
+    <div className={`input-field_EsqSenha3 ${property1} ${className}`}>
       <input
-        type="email"
+        type="password"
         value={value}
         name={name}
         onChange={onChange}
+        maxLength={maxLength}
         className={`element ${property1 === "active-state" ? "active" : ""}`}
         placeholder={property1 === "default-state" ? text : ""}
       />
@@ -17,12 +18,13 @@ export const InputFieldEmail = ({ property1 = "default-state", className, keyFie
   );
 };
 
-InputFieldEmail.propTypes = {
+InputFieldEsqSenha2.propTypes = {
   property1: PropTypes.string,
   className: PropTypes.string,
   keyFieldClassName: PropTypes.string,
   text: PropTypes.string,
   value: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
+  maxLength: PropTypes.number,
   onChange: PropTypes.func.isRequired,
 };

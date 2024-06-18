@@ -144,3 +144,27 @@
   top: 10px !important;
 }
 
+.button-confirmar {
+  align-items: center;
+  background-color: #f5061d;
+  border-radius: 45px;
+  display: inline-flex;
+  gap: 10px;
+  height: 58px;
+  justify-content: center;
+  padding: 2px 36px;
+  position: relative;
+  color: #ffffff;
+  font-family: "Exo 2", Helvetica;
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.button-confirmar:hover {
+  background-color: #222422;
+}

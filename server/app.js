@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true })); // Para lidar com requisições URL-encoded
 
 // Rotas
-app.use('/api', authRoutes); // Prefira agrupar todas as rotas sob um prefixo comum, como /api
+app.use('/api', authRoutes);
 
 // Função para processar transferências pendentes
 const processPendingTransfers = async () => {

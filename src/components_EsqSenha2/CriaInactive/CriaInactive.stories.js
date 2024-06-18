@@ -1,4 +1,4 @@
-import { CriaInactive } from ".";
+/*import { CriaInactive } from ".";
 
 export default {
   title: "Components/CriaInactive",
@@ -13,3 +13,4 @@ export const Default = {
     text: "Criar conta",
   },
 };
+*/

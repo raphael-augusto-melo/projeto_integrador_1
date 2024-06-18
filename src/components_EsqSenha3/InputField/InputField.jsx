@@ -1,92 +1,30 @@
-/*
-We're constantly improving the code you see. 
-Please share your feedback here: https://form.asana.com/?k=uvp-HPgd3_hyoXRBw1IcNg&d=1152665201300829
-*/
-
 import PropTypes from "prop-types";
 import React from "react";
-import { useReducer } from "react";
 import "./style_inp_EsqSenha3.css";
 
-function reducer(state, action) {
-  switch (action.type) {
-    case "click":
-      return {
-        ...state,
-        property1: "active-state",
-      };
-    case "change":
-      return {
-        ...state,
-        value: action.value,
-      };
-    case "blur":
-      return {
-        ...state,
-        property1: "default-state",
-      };
-    default:
-      return state;
-  }
-}
-
-export const SenhaInputField = ({ className, text = "Senha", maxLength }) => {
-  const [state, dispatch] = useReducer(reducer, {
-    property1: "default-state",
-    value: "",
-  });
-
+export const InputFieldEsqSenha = ({ property1 = "default-state", className, keyFieldClassName, text, value, name, maxLength, onChange }) => {
   return (
-    <div className={`input-field_EsqSenha3 ${state.property1} ${className}`}>
+    <div className={`input-field_EsqSenha3 ${property1} ${className}`}>
       <input
-        className="element"
         type="password"
+        value={value}
+        name={name}
+        onChange={onChange}
         maxLength={maxLength}
-        value={state.value}
-        onChange={(e) => dispatch({ type: "change", value: e.target.value })}
-        onFocus={() => dispatch({ type: "click" })}
-        onBlur={() => {
-          if (state.value === "") {
-            dispatch({ type: "blur" });
-          }
-        }}
+        className={`element ${property1 === "active-state" ? "active" : ""}`}
+        placeholder={property1 === "default-state" ? text : ""}
       />
-      {state.property1 === "default-state" && state.value === "" && (
-        <div className="default-text">{text}</div>
-      )}
-
-      {state.property1 === "active-state" && (
-        <div className="overlap-group">
-          {/* Componentes PropertyDefault não omitidos para brevidade */}
-        </div>
-      )}
     </div>
   );
 };
 
-function reducer(state, action) {
-  switch (action.type) {
-    case "click":
-      return {
-        ...state,
-        property1: "active-state",
-      };
-    case "change":
-      return {
-        ...state,
-        value: action.value,
-      };
-    case "blur":
-      return {
-        ...state,
-        property1: "default-state",
-      };
-    default:
-      return state;
-  }
-}
-
-SenhaInputField.propTypes = {
-  property1: PropTypes.oneOf(["default-state", "active-state"]),
+InputFieldEsqSenha.propTypes = {
+  property1: PropTypes.string,
+  className: PropTypes.string,
+  keyFieldClassName: PropTypes.string,
   text: PropTypes.string,
+  value: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  maxLength: PropTypes.number,
+  onChange: PropTypes.func.isRequired,
 };

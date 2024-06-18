@@ -1,4 +1,4 @@
-import { BlinkingCursor } from ".";
+/*import { BlinkingCursor } from ".";
 
 export default {
   title: "Components/BlinkingCursor",
@@ -18,3 +18,4 @@ export const Default = {
     propertyCursorOn: "https://c.animaapp.com/gEMRkGWd/img/property-1-cursor-on@2x.png",
   },
 };
+*/

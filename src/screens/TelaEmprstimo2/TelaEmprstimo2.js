@@ -14,11 +14,13 @@ export const TelaEmprstimo2 = () => {
   };
 
   const handleSubmit = () => {
-    const onlyNumbers = valor.replace(/\D/g, "");
-    const valorEmCentavos = parseFloat(onlyNumbers);
+    const onlyNumbers = valor.replace(/[^\d,]/g, "");
+    const valorEmReais = onlyNumbers.replace('.', '').replace(',', '.');
+
+    const valorEmCentavos = parseFloat(valorEmReais) * 100;
 
     if (valorEmCentavos <= 3000000) { // Valor em centavos
-      navigate('/TelaEmprstimo3');
+      navigate('/TelaEmprstimo3', { state: { valorEmprestimo: valor } });
     } else {
       alert('O valor deve ser inferior ou igual a R$ 30.000,00');
     }
